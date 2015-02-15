@@ -1,0 +1,24 @@
+{
+  "name": "personnalWebsite",
+  "version": "0.0.1",
+  "authors": [
+    "Christophe Boucaut <boucaut.christophe@gmail.com>"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.3.x",
+    "angular-route": "~1.3.x",
+    "angular-resource": "~1.3.x",
+    "jquery": "~2.1.x",
+    "bootstrap": "3.3.*"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
