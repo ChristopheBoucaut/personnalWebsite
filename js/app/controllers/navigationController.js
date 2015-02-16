@@ -23,6 +23,7 @@
              */
             function hideNavigation() {
                 $element.hide();
+                $element.removeClass("showed");
             }
 
             /**
@@ -30,6 +31,7 @@
              */
             function showNavigation() {
                 $element.show();
+                $element.addClass("showed");
             }
 
             /**
