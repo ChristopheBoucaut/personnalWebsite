@@ -2,8 +2,8 @@ body {
     background-color: #f5f5f5;
 }
 
-body > nav+div {
-    background-color: white;
+body nav li a span {
+    padding-right: 5px;
 }
 
 body nav.showed+main  {

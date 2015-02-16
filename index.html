@@ -8,6 +8,8 @@
 
         <!-- JS for JQuery -->
         <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <!-- JS for Bootstrap -->
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
         <!-- JS for Anguar -->
         <script src="bower_components/angular/angular.min.js"></script>
@@ -48,7 +50,12 @@
                 </div>
                 <div id="main-nav" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a id="test" href="#/test">test</a></li>
+                        <li ng-repeat="item in itemsNavigation">
+                            <a id="{{ item.id }}" ng-href="{{ item.link }}">
+                                <span class="{{ item.iconClass }}"></span>
+                                {{ item.title }}
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>

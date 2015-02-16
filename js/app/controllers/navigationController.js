@@ -11,29 +11,36 @@
                 {
                     title: "Mes projets",
                     iconClass: "glyphicon glyphicon-folder-open",
-                    link: "#/projects"
+                    link: "#/projects",
+                    id: "projects-nav"
                 },
                 {
                     title: "Mon parcours",
                     iconClass: "glyphicon glyphicon-briefcase",
-                    link: "#/career"
+                    link: "#/career",
+                    id: "career-nav"
                 },
                 {
                     title: "Mes compétences",
                     iconClass: "glyphicon glyphicon-book",
-                    link: "#/skills"
+                    link: "#/skills",
+                    id: "skills-nav"
                 },
                 {
                     title: "Me contacter",
                     iconClass: "glyphicon glyphicon-comment",
-                    link: "#/contact"
+                    link: "#/contact",
+                    id: "contact-nav"
                 },
                 {
                     title: "Mon blog",
                     iconClass: "glyphicon glyphicon-pencil",
-                    link: "http://blog-de-shimrra.christophe-boucaut.fr/"
+                    link: "http://blog-de-shimrra.christophe-boucaut.fr/",
+                    id: "blog-nav"
                 }
             ];
+
+            $scope.itemsNavigation = itemsNavigation;
 
             $scope.$on(NavigationManager.EVENT_HIDE_NAVIGATION, hideNavigation);
             $scope.$on(NavigationManager.EVENT_SHOW_NAVIGATION, showNavigation);
