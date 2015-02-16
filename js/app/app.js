@@ -4,7 +4,8 @@
     var personnalWebsite = angular.module("personnalWebsite", [
         "ngRoute",
 
-        "personnalWebsiteControllers"
+        "personnalWebsiteControllers",
+        "personnalWebsiteServices"
     ]);
 
     personnalWebsite.config(["$routeProvider",
@@ -14,7 +15,8 @@
                     "/",
                     {
                         controller: "HomepageController",
-                        templateUrl: "views/homepage.html"
+                        templateUrl: "views/homepage.html",
+                        navigationBar: false
                     }
                 )
                 .otherwise({ redirectTo: "/" });
