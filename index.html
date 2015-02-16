@@ -16,14 +16,21 @@
 
         <!-- JS for App -->
         <script src="js/app/app.js"></script>
-        <script src="js/app/controller.js"></script>
+        
+        <!-- JS for controllers -->
+        <script src="js/app/controllers.js"></script>
         <script src="js/app/controllers/homepageController.js"></script>
+        <script src="js/app/controllers/navigationController.js"></script>
+
+        <!-- JS for services -->
+        <script src="js/app/services.js"></script>
+        <script src="js/app/services/navigationManager.js"></script>
 
         <!-- CSS for Bootstrap -->
         <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     </head>
     <body>
-        <nav class="navbar navbar-default navbar-fixed-top">
+        <nav class="navbar navbar-default navbar-fixed-top" ng-controller="NavigationController">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav" aria-expanded="false" aria-controls="navbar">
@@ -36,7 +43,7 @@
                 </div>
                 <div id="main-nav" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a>test</a></li>
+                        <li><a id="test" href="#/test">test</a></li>
                     </ul>
                 </div>
             </div>

@@ -4,7 +4,8 @@
     var personnalWebsite = angular.module("personnalWebsite", [
         "ngRoute",
 
-        "personnalWebsiteControllers"
+        "personnalWebsiteControllers",
+        "personnalWebsiteServices"
     ]);
 
     personnalWebsite.config(["$routeProvider",

@@ -2,8 +2,8 @@
 
 (function(angular) {
     angular.module("personnalWebsiteControllers").controller("HomepageController", [
-        function() {
-            
+        "NavigationManager",
+        function(NavigationManager) {
         }
     ]);
 })(window.angular);
