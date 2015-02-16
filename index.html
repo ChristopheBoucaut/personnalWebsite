@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="fr" ng-app="personnalWebsite">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Christophe Boucaut, site web personnel.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Christophe Boucaut</title>
+
+        <!-- JS for JQuery -->
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+        <!-- JS for Anguar -->
+        <script src="bower_components/angular/angular.min.js"></script>
+        <script src="bower_components/angular-route/angular-route.min.js"></script>
+        <script src="bower_components/angular-resource/angular-resource.min.js"></script>
+
+        <!-- JS for App -->
+        <script src="js/app/app.js"></script>
+        <script src="js/app/controller.js"></script>
+        <script src="js/app/controllers/homepageController.js"></script>
+
+        <!-- CSS for Bootstrap -->
+        <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    </head>
+    <body>
+        <main ng-view></main>
+    </body>
+</html>
