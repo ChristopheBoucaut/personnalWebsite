@@ -8,8 +8,10 @@
         "personnalWebsiteServices"
     ]);
 
-    personnalWebsite.config(["$routeProvider",
-        function($routeProvider) {
+    personnalWebsite.config([
+        "$routeProvider",
+        "itemsNavigation",
+        function($routeProvider, itemsNavigation) {
             $routeProvider
                 .when(
                     "/",
@@ -19,19 +21,76 @@
                         navigationBar: false,
                         footer: false
                     }
-                )
-                .otherwise({ redirectTo: "/" });
+                ).otherwise({ redirectTo: "/" });
+                // Add alls routes from configuration.
+                for (var i = itemsNavigation.length - 1; i >= 0; i--) {
+                    if (itemsNavigation[i].controller && itemsNavigation[i].templateUrl) {
+                        var path = itemsNavigation[i].link.replace(/^#/, "");
+                        var configRoute = itemsNavigation[i];
+                        if (configRoute.navigationBar === undefined) {
+                            configRoute.navigationBar = true;
+                        }
+                        if (configRoute.footer === undefined) {
+                            configRoute.footer = true;
+                        }
+                        $routeProvider.when(path, configRoute);
+                    }
+                }
+        }
+    ]);
+
+    // list of navigation items.
+    personnalWebsite.constant("itemsNavigation", [
+        {
+            controller: "ProjectController",
+            templateUrl: "views/project.html",
+            title: "Mes projets",
+            iconClass: "glyphicon glyphicon-folder-open",
+            link: "#/projects",
+            id: "projects-nav"
+        },
+        {
+            title: "Mon parcours",
+            iconClass: "glyphicon glyphicon-briefcase",
+            link: "#/career",
+            id: "career-nav"
+        },
+        {
+            title: "Mes compétences",
+            iconClass: "glyphicon glyphicon-book",
+            link: "#/skills",
+            id: "skills-nav"
+        },
+        {
+            title: "Me contacter",
+            iconClass: "glyphicon glyphicon-comment",
+            link: "#/contact",
+            id: "contact-nav"
+        },
+        {
+            title: "Mon blog",
+            iconClass: "glyphicon glyphicon-pencil",
+            link: "http://blog-de-shimrra.christophe-boucaut.fr/",
+            id: "blog-nav"
         }
     ]);
 
     personnalWebsite.run([
         "$rootScope",
-        function($rootScope) {
+        "itemsNavigation",
+        function($rootScope, itemsNavigation) {
             // To update the page title when page is loaded.
-            $rootScope.$on("$routeChangeSuccess", function(event, current, previous) {
+            $rootScope.$on("$routeChangeSuccess", function(event, current) {
                 var title = "Christophe Boucaut";
-                if (current.$$route.title) {
-                    title = current.$$route.title+" - "+title;
+                // if current route has an id.
+                if (current.$$route.id) {
+                    // search current navigation item.
+                    for (var i = itemsNavigation.length - 1; i >= 0; i--) {
+                        if (itemsNavigation[i].id == current.$$route.id) {
+                            title = itemsNavigation[i].title+" - "+title;
+                            break;
+                        }
+                    }
                 }
 
                 $rootScope.titlePage = title;

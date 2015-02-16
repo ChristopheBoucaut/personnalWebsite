@@ -3,11 +3,10 @@
 (function(angular) {
     angular.module("personnalWebsiteControllers").controller("HomepageController", [
         "$scope",
+        "itemsNavigation",
         "NavigationManager",
-        function($scope, NavigationManager) {
-            NavigationManager.getItemsNavigation(function(items) {
-                $scope.itemsNavigation = items;
-            });
+        function($scope, itemsNavigation, NavigationManager) {
+            $scope.itemsNavigation = itemsNavigation;
         }
     ]);
 })(window.angular);
