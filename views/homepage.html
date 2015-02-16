@@ -1,1 +1,23 @@
-home
+<link rel="stylesheet" type="text/css" href="css/homepage.css">
+<section id="homepage" class="site-wrapper">
+    <div class="site-wrapper-inner">
+        <div class="cover-container">
+            <div class="cover">
+                <h1 class="cover-heading">Christophe Boucaut</h1>
+                <h2 class="cover-heading">Développeur web</h2>
+                <h3 class="cover-heading">Actuellement en alternance chez <a href="http://www.geneanet.org/" title="Site web proposant des outils pour généalogistes." target="_blank">Geneanet</a>, je prépare un master <a href="http://www.insset.u-picardie.fr/formations/master-ccm" title="Master Cloud Computing & Mobility." target="_blank">CCM à l'INSSET</a>.</h3>
+                <p class="lead">Je développe principalement avec des technologies du web (PHP, Symfony 2 / AngularJS / Bootstrap, Foudation) mais également des applications mobiles (Cordova et plugin natif android). Je suis également un grand fan d'Elasticsearch et adepte de l'opensource.</p>
+                <nav>
+                    <ul>
+                        <li ng-repeat="item in itemsNavigation">
+                            <a ng-href="{{ item.link }}" class="btn btn-default">
+                                <span class="{{ item.iconClass }}"></span>
+                                {{ item.title }}
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
