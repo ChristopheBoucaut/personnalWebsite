@@ -21,13 +21,18 @@
         <script src="js/app/controllers.js"></script>
         <script src="js/app/controllers/homepageController.js"></script>
         <script src="js/app/controllers/navigationController.js"></script>
+        <script src="js/app/controllers/footerController.js"></script>
 
         <!-- JS for services -->
         <script src="js/app/services.js"></script>
         <script src="js/app/services/navigationManager.js"></script>
+        <script src="js/app/services/footerManager.js"></script>
 
         <!-- CSS for Bootstrap -->
         <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+        <!-- Personnal CSS -->
+        <link rel="stylesheet" type="text/css" href="css/global.css">
     </head>
     <body>
         <nav class="navbar navbar-default navbar-fixed-top" ng-controller="NavigationController">
@@ -49,5 +54,29 @@
             </div>
         </nav>
         <main ng-view></main>
+        <footer ng-controller="FooterController">
+            <div class="container">
+                <ul class="text-center">
+                    <li>
+                        <a title="Twitter" href="https://www.twitter.com/Boucaut_C" target="_blank" class="icon-twitter">@Boucaut_C</a>
+                    </li>
+                    <li>
+                        <a title="Google+" href="https://plus.google.com/+ChristopheBoucaut" target="_blank" class="icon-google-plus">+ChristopheBoucaut</a>
+                    </li>
+                    <li>
+                        <a title="Github" href="https://github.com/ChristopheBoucaut" target="_blank" class="icon-github">ChristopheBoucaut</a>
+                    </li>
+                    <li>
+                        <a title="Linkedin" href="https://www.linkedin.com/pub/christophe-boucaut/42/a01/60" target="_blank" class="icon-linkedin">christophe-boucaut</a>
+                    </li>
+                    <li>
+                        <a title="Stack Overflow" href="http://stackoverflow.com/users/4538695/shimrra" target="_blank" class="icon-stackoverflow">Shimrra</a>
+                    </li>
+                </ul>
+                <p class="text-muted text-center">
+                    <small>Développé en 2014 par Christophe Boucaut</small>
+                </p>
+            </div>
+        </footer>
     </body>
 </html>

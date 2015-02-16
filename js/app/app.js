@@ -16,7 +16,8 @@
                     {
                         controller: "HomepageController",
                         templateUrl: "views/homepage.html",
-                        navigationBar: false
+                        navigationBar: false,
+                        footer: false
                     }
                 )
                 .otherwise({ redirectTo: "/" });
