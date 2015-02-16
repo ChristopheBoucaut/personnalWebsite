@@ -11,6 +11,11 @@
             $scope.$on("$routeChangeSuccess", function (event, current) {
                 // update item active in navigation bar after route is loaded.
                 updateActive(current.$$route.idElement);
+                if (current.$$route.navigationBar) {
+                    showNavigation();
+                } else {
+                    hideNavigation();
+                }
             });
 
             /**
