@@ -23,4 +23,19 @@
                 .otherwise({ redirectTo: "/" });
         }
     ]);
+
+    personnalWebsite.run([
+        "$rootScope",
+        function($rootScope) {
+            // To update the page title when page is loaded.
+            $rootScope.$on("$routeChangeSuccess", function(event, current, previous) {
+                var title = "Christophe Boucaut";
+                if (current.$$route.title) {
+                    title = current.$$route.title+" - "+title;
+                }
+
+                $rootScope.titlePage = title;
+            });
+        }
+    ]);
 })(window.angular);
