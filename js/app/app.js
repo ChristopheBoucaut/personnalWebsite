@@ -50,6 +50,8 @@
             id: "projects-nav"
         },
         {
+            controller: "CareerController",
+            templateUrl: "views/career.html",
             title: "Mon parcours",
             iconClass: "glyphicon glyphicon-briefcase",
             link: "#/career",
