@@ -1,0 +1,67 @@
+#career .step-career {
+    position: relative;
+    height: 100px;
+    width: 0;
+    margin: auto;
+    border: 2px solid #e7e7e7;
+}
+
+#career .step-career.step-dotted {
+    border-style: dotted;
+}
+
+#career .step-career.step-dotted,
+#career .step-career.step-half {
+    height: 50px;
+}
+
+#career .step-career a {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    display: table;
+    width: 300px;
+    margin-left: -14px;
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#career .step-career a span {
+    line-height: 12px;
+    display: table-cell;
+}
+
+#career .step-career a span+span {
+    width: 250px;
+    padding-top: 6px;
+}
+
+#career .step-career a span.glyphicon {
+    background-color: white;
+    border: 2px solid #e7e7e7;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#career .step-career:nth-child(odd) a span.glyphicon {
+    margin-right: 5px;
+}
+
+#career .step-career:nth-child(odd) a span {
+    text-align: left;
+    float: left;
+}
+
+#career .step-career:nth-child(even) a {
+    margin-left: -286px;
+}
+
+#career .step-career:nth-child(even) a span.glyphicon {
+    margin-left: 5px;
+}
+
+#career .step-career:nth-child(even) a span {
+    text-align: right;
+    float: right;
+}

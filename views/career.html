@@ -1,2 +1,11 @@
-<section class="container">
+<link rel="stylesheet" type="text/css" href="css/career.css">
+<section id="career" class="container">
+    <div class="step-career step-dotted step-half"></div>
+    <div class="step-career" ng-repeat="stepCareer in stepsCareer | orderBy:'dateStart':true">
+        <a ng-click="openStep()">
+            <span class="glyphicon glyphicon-briefcase"></span>
+            <span>{{ stepCareer.title }}</span>
+        </a>
+    </div>
+    <div class="step-career step-half"></div>
 </section>
