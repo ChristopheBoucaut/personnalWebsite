@@ -11,7 +11,7 @@
                     title: "Développeur web",
                     organisation: "Geneanet",
                     description: "<p>test <button>t</button> </p>",
-                    keywords: ["test1", "test 2"],
+                    keywords: ["elasticsearch", "api twitter", "cordova", "angularJS", "symfony2", "API rest"],
                     dateStart: new Date("2013-09-02"),
                     dateEnd: null,
                     links: {
@@ -178,6 +178,7 @@
             }
 
             $scope.stepsCareer = stepsCareer;
+            $scope.objectEmpty = objectEmpty;
 
             /**
              * To generate a string to discribe difference between two dates.
@@ -256,6 +257,21 @@
                 }
 
                 return date.charAt(0).toUpperCase() + date.slice(1);
+            }
+
+            /**
+             * Test if object is empty.
+             * 
+             * @param {object} obj Object to test.
+             * 
+             * @return {boolean}
+             */
+            function objectEmpty(obj) {
+                if (obj) {
+                    return Object.keys(obj).length === 0;
+                }
+
+                return true;
             }
         }
     ]);

@@ -58,7 +58,7 @@
     float: left;
 }
 
-#career .step-career:nth-child(even) a {
+#career .step-career:nth-child(even) > a {
     margin-left: -286px;
 }
 

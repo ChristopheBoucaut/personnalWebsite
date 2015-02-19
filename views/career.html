@@ -24,17 +24,17 @@
                     </div>
                     <div class="modal-body" ng-bind-html="stepCareer.description">
                     </div>
-                    <div class="modal-footer">
+                    <div class="modal-footer" ng-if="!objectEmpty(stepCareer.links) && stepCareer.keywords.length > 0">
                         <div class="text-left">
-                            <div>Liens utiles</div>
-                            <ul>
+                            <div ng-if="!objectEmpty(stepCareer.links)">Liens utiles</div>
+                            <ul ng-if="!objectEmpty(stepCareer.links)">
                                 <li ng-repeat="(contentLink, link) in stepCareer.links">
                                     <a ng-href="{{ link }}" target="_blank">{{ contentLink }}</a>
                                 </li>
                             </ul>
 
-                            <div>Mots clés</div>
-                            <ul class="text-muted" id="keywords">
+                            <div ng-if="stepCareer.keywords.length > 0">Mots clés</div>
+                            <ul class="text-muted" id="keywords" ng-if="stepCareer.keywords.length > 0">
                                 <li ng-repeat="keyword in stepCareer.keywords">{{ keyword }}</li>
                             </ul>
                         </div>
