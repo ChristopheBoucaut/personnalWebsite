@@ -80,8 +80,14 @@
     display: inline-block;
 }
 
+#career .modal-footer ul#keywords li {
+    padding: 0px 5px;
+    background-color: #e7e7e7;
+}
+
 #career .modal-footer li+li {
-    padding: 5px 10px;
+    padding-bottom: 5px;
+    margin-left: 10px;
 }
 
 #career .modal-footer a {
