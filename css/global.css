@@ -2,6 +2,10 @@ body {
     background-color: #f5f5f5;
 }
 
+body.modal-open {
+    overflow: auto;
+}
+
 body nav li a span {
     padding-right: 5px;
 }

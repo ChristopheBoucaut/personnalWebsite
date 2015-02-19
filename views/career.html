@@ -1,14 +1,47 @@
 <link rel="stylesheet" type="text/css" href="css/career.css">
 <section id="career" class="container">
     <div class="step-career step-dotted step-half"></div>
-    <div class="step-career" ng-repeat="stepCareer in stepsCareer | orderBy:'dateStart':true">
-        <a ng-click="openStep()">
+    <div class="step-career" ng-class="{'step-in-progress': !stepCareer.dateEnd}" ng-repeat="stepCareer in stepsCareer | orderBy:'dateStart':true">
+        <a data-toggle="modal" data-target="#modal-{{ $index }}">
             <span class="glyphicon" ng-class="stepCareer.type == 'school' ? 'glyphicon-education' : (stepCareer.type == 'professional' ? 'glyphicon-briefcase' : 'glyphicon-heart')"></span>
             <span>
                 <strong>{{ stepCareer.title }}</strong>&nbsp;-&nbsp;{{ stepCareer.organisation }}<br/>
                 <small class="text-muted">{{ stepCareer.dateDiff }}</small>
             </span>
         </a>
+        <div class="modal fade" id="modal-{{ $index }}">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h3 class="modal-title">
+                            {{ stepCareer.title }} <small>({{ stepCareer.organisation }})</small>
+                        </h3>
+                        <div class="text-muted">
+                            <small>{{ stepCareer.dateStartString }} - {{ stepCareer.dateEndString }} ({{ stepCareer.dateDiff }})</small>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        Content
+                    </div>
+                    <div class="modal-footer">
+                        <div class="text-left">
+                            <div>Liens utiles</div>
+                            <ul>
+                                <li ng-repeat="(contentLink, link) in stepCareer.links">
+                                    <a ng-href="{{ link }}" target="_blank">{{ contentLink }}</a>
+                                </li>
+                            </ul>
+
+                            <div>Mots clés</div>
+                            <ul class="text-muted">
+                                <li ng-repeat="keyword in stepCareer.keywords">{{ keyword }}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="step-career step-half"></div>
 </section>

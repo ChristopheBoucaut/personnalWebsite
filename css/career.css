@@ -15,7 +15,7 @@
     height: 50px;
 }
 
-#career .step-career a {
+#career .step-career > a {
     position: absolute;
     top: 50%;
     left: 0px;
@@ -44,6 +44,11 @@
     padding: 5px;
 }
 
+#career .step-career.step-in-progress a span.glyphicon {
+    background-color: rgb(23, 174, 229);
+    color: white;
+}
+
 #career .step-career:nth-child(odd) a span.glyphicon {
     margin-right: 5px;
 }
@@ -64,4 +69,21 @@
 #career .step-career:nth-child(even) a span {
     text-align: right;
     float: right;
+}
+
+#career .modal-footer ul {
+    padding: 0px;
+}
+
+#career .modal-footer li {
+    list-style: none;
+    display: inline-block;
+}
+
+#career .modal-footer li+li {
+    padding: 5px 10px;
+}
+
+#career .modal-footer a {
+    text-decoration: underline;
 }
