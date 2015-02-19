@@ -1,5 +1,6 @@
 <link rel="stylesheet" type="text/css" href="css/career.css">
 <section id="career" class="container">
+    <div class="alert alert-info" role="alert">Cliquez sur un élément de la frise pour obtenir plus de détail.</div>
     <div class="step-career step-dotted step-half"></div>
     <div class="step-career" ng-class="{'step-in-progress': !stepCareer.dateEnd}" ng-repeat="stepCareer in stepsCareer | orderBy:'dateStart':true">
         <a data-toggle="modal" data-target="#modal-{{ $index }}">
