@@ -3,15 +3,16 @@
 (function(angular) {
     angular.module("personnalWebsiteControllers").controller("CareerController", [
         "$scope",
-        function($scope) {
+        "$sce",
+        function($scope, $sce) {
             var stepsCareer = [
                 {
                     type: "professional",
                     title: "Développeur web",
                     organisation: "Geneanet",
-                    description: "",
+                    description: "<p>test <button>t</button> </p>",
                     keywords: ["test1", "test 2"],
-                    dateStart: new Date("2013-09-01"),
+                    dateStart: new Date("2013-09-02"),
                     dateEnd: null,
                     links: {
                         mot: "link"
@@ -119,7 +120,7 @@
                     organisation: "INSSET",
                     description: "",
                     keywords: [],
-                    dateStart: new Date("2013-09-01"),
+                    dateStart: new Date("2013-09-02"),
                     dateEnd: null,
                     links: {
                         mot: "link"
@@ -173,7 +174,7 @@
                     stepsCareer[i].dateDiff = generateDiffDate(stepsCareer[i].dateStart, new Date());
                     stepsCareer[i].dateEndString = "Aujourd'hui";
                 }
-
+                stepsCareer[i].description = $sce.trustAsHtml(stepsCareer[i].description);
             }
 
             $scope.stepsCareer = stepsCareer;
@@ -254,7 +255,7 @@
                     }
                 }
 
-                return date.charAt(0).toUpperCase() + date.slice(1);;
+                return date.charAt(0).toUpperCase() + date.slice(1);
             }
         }
     ]);
