@@ -3,8 +3,11 @@
     <div class="step-career step-dotted step-half"></div>
     <div class="step-career" ng-repeat="stepCareer in stepsCareer | orderBy:'dateStart':true">
         <a ng-click="openStep()">
-            <span class="glyphicon glyphicon-briefcase"></span>
-            <span>{{ stepCareer.title }}</span>
+            <span class="glyphicon" ng-class="stepCareer.type == 'school' ? 'glyphicon-education' : (stepCareer.type == 'professional' ? 'glyphicon-briefcase' : 'glyphicon-heart')"></span>
+            <span>
+                <strong>{{ stepCareer.title }}</strong>&nbsp;-&nbsp;{{ stepCareer.organisation }}<br/>
+                <small class="text-muted">{{ stepCareer.dateDiff }}</small>
+            </span>
         </a>
     </div>
     <div class="step-career step-half"></div>

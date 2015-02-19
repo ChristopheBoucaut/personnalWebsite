@@ -28,13 +28,13 @@
 }
 
 #career .step-career a span {
-    line-height: 12px;
     display: table-cell;
 }
 
 #career .step-career a span+span {
     width: 250px;
     padding-top: 6px;
+    line-height: 18px;
 }
 
 #career .step-career a span.glyphicon {
