@@ -39,19 +39,19 @@ footer li a {
     background-position: left center;
 }
 
-footer li a.icon-twitter {
+.icon-twitter {
     background-image: url('../images/icons/twitter.png');
 }
-footer li a.icon-google-plus {
+.icon-google-plus {
     background-image: url('../images/icons/googleplus.png');
 }
-footer li a.icon-github {
+.icon-github {
     background-image: url('../images/icons/github.png');
 }
-footer li a.icon-linkedin {
+.icon-linkedin {
     background-image: url('../images/icons/linkedin.png');
 }
-footer li a.icon-stackoverflow {
+.icon-stackoverflow {
     background-image: url('../images/icons/stackoverflow.png');
 }
 

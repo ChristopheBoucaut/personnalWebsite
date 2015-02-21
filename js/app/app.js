@@ -64,6 +64,8 @@
             id: "skills-nav"
         },
         {
+            controller: "ContactController",
+            templateUrl: "views/contact.html",
             title: "Me contacter",
             iconClass: "glyphicon glyphicon-comment",
             link: "#/contact",
