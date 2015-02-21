@@ -6,7 +6,7 @@
         <a data-toggle="modal" data-target="#modal-{{ $index }}">
             <span class="glyphicon" ng-class="stepCareer.type == 'school' ? 'glyphicon-education' : (stepCareer.type == 'professional' ? 'glyphicon-briefcase' : 'glyphicon-heart')"></span>
             <span>
-                <strong>{{ stepCareer.title }}</strong>&nbsp;-&nbsp;{{ stepCareer.organisation }}<br/>
+                <strong>{{ stepCareer.title }}</strong> - {{ stepCareer.organisation }}<br/>
                 <small class="text-muted">{{ stepCareer.dateDiff }}</small>
             </span>
         </a>
