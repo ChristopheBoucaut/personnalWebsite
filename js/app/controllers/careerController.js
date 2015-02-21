@@ -3,151 +3,158 @@
 (function(angular) {
     angular.module("personnalWebsiteControllers").controller("CareerController", [
         "$scope",
-        "$sce",
-        function($scope, $sce) {
+        function($scope) {
             var stepsCareer = [
                 {
                     type: "professional",
                     title: "Développeur web",
                     organisation: "Geneanet",
-                    description: "<p>test <button>t</button> </p>",
+                    description: "devWebGeneanet.html",
                     keywords: ["elasticsearch", "api twitter", "cordova", "angularJS", "symfony2", "API rest"],
                     dateStart: new Date("2013-09-02"),
                     dateEnd: null,
                     links: {
-                        mot: "link"
+                        "Sauvons nos tombes": "http://www.geneanet.org/sauvons_nos_tombes",
+                        "customCamera (plugin cordova)": "https://github.com/geneanet/customCamera",
+                        "customCamera (plugin angularJS)": "https://github.com/geneanet/customCameraAngular"
                     }
                 },
                 {
                     type: "professional",
                     title: "Développeur web stagiaire",
                     organisation: "Geneanet",
-                    description: "",
-                    keywords: [],
+                    description: "stageDevWebGeneanet.html",
+                    keywords: ["prestashop", "intranet", "SCRUM", "responsive", "webservices"],
                     dateStart: new Date("2013-03-18"),
                     dateEnd: new Date("2013-08-23"),
                     links: {
-                        mot: "link"
+                        "Geneanet boutique": "http://www.geneanet.org/boutique/",
+                        "Exemple de surcharge pour Prestashop" : "http://blog-de-shimrra.christophe-boucaut.fr/?p=586"
                     }
                 },
                 {
                     type: "volunteer",
                     title: "Développeur bénévole",
                     organisation: "Esperance rando",
-                    description: "",
-                    keywords: [],
+                    description: "devEsperanceRando.html",
+                    keywords: ["wordpress", "surcharge de thème"],
                     dateStart: new Date("2012-11-03"),
                     dateEnd: new Date("2013-04-01"),
                     links: {
-                        mot: "link"
+                        "Esperance Rando": "http://esperancerando.fr/"
                     }
                 },
                 {
                     type: "professional",
                     title: "Employé saisonnié",
                     organisation: "Soufflet",
-                    description: "",
-                    keywords: [],
+                    description: "saisonnieSoufflet.html",
+                    keywords: ["helpdesk", "preparation PC", "imprimante réseau"],
                     dateStart: new Date("2012-08-01"),
                     dateEnd: new Date("2012-08-31"),
                     links: {
-                        mot: "link"
+                        "Groupe Soufflet": "http://www.soufflet.com/"
                     }
                 },
                 {
                     type: "professional",
                     title: "Employé saisonnié",
                     organisation: "EDF",
-                    description: "",
-                    keywords: [],
+                    description: "saisonnieEdf.html",
+                    keywords: ["documentation"],
                     dateStart: new Date("2012-07-01"),
-                    dateEnd: new Date("2012-07-31"),
-                    links: {
-                        mot: "link"
-                    }
+                    dateEnd: new Date("2012-07-31")
                 },
                 {
                     type: "professional",
                     title: "Développeur web stagiaire",
                     organisation: "Geneanet",
-                    description: "",
-                    keywords: [],
+                    description: "stageDevWebGeneanet2.html",
+                    keywords: ["PHP", "framework maison", "autonomie"],
                     dateStart: new Date("2012-04-16"),
                     dateEnd: new Date("2012-06-15"),
                     links: {
-                        mot: "link"
+                        Geneastar: "http://www.geneastar.org/"
                     }
                 },
                 {
                     type: "volunteer",
                     title: "Développeur bénévole",
                     organisation: "Gatewars",
-                    description: "",
-                    keywords: [],
+                    description: "devGatewars.html",
+                    keywords: ["initiation au developpement web"],
                     dateStart: new Date("2011-08-01"),
                     dateEnd: new Date("2012-02-01"),
                     links: {
-                        mot: "link"
+                        Gatewars: "http://gatewars.eu/"
                     }
                 },
                 {
                     type: "professional",
                     title: "Employé saisonnié",
                     organisation: "Soufflet",
-                    description: "",
-                    keywords: [],
+                    description: "saisonnieSoufflet2.html",
+                    keywords: ["helpdesk", "preparation PC"],
                     dateStart: new Date("2011-08-01"),
                     dateEnd: new Date("2011-08-31"),
                     links: {
-                        mot: "link"
+                        "Groupe Soufflet": "http://www.soufflet.com/"
                     }
                 },
                 {
                     type: "volunteer",
                     title: "Hackathon de Saint-Quentin",
-                    organisation: "Cloudin'tra",
-                    description: "",
-                    keywords: [],
+                    organisation: "CloudIn'tra",
+                    description: "devCloudintra.html",
+                    keywords: ["Symfony 2", "Bootstrap"],
                     dateStart: new Date("2014-04-14"),
                     dateEnd: new Date("2014-04-18"),
                     links: {
-                        mot: "link"
+                        "CloudIn'tra": "http://cloudintra.fr/",
+                        "Reportage sur l'évènement (7min30)": "http://www.matele.tv/default.asp?categorie_id&emission_id=22&video_id=1797"
                     }
                 },
                 {
                     type: "school",
                     title: "Master Cloud Computing & Mobility",
                     organisation: "INSSET",
-                    description: "",
-                    keywords: [],
+                    description: "schoolCCM.html",
+                    keywords: ["kanban", "emberjs", "déploiement amazon", "openstack", "android", "ios"],
                     dateStart: new Date("2013-09-02"),
                     dateEnd: null,
                     links: {
-                        mot: "link"
+                        "Master CCM": "http://www.insset.u-picardie.fr/formations/master-ccm",
+                        "Article sur l'inauguration du master": "http://blog-de-shimrra.christophe-boucaut.fr/?p=326",
+                        "Journée be-zend organisée par les deuxièmes années du master": "http://www.matele.tv/default.asp?categorie_id=5&emission_id=24&video_id=1648",
+                        "fabric": "http://www.fabfile.org/"
                     }
                 },
                 {
                     type: "school",
                     title: "Licence web pro",
                     organisation: "INSSET",
-                    description: "",
-                    keywords: [],
+                    description: "schoolLicence.html",
+                    keywords: ["Zend Framework 1", "référencement", "JSF/JSP"],
                     dateStart: new Date("2012-09-02"),
                     dateEnd: new Date("2013-06-23"),
                     links: {
-                        mot: "link"
+                        "Licence progessionnelle web": "http://www.insset.u-picardie.fr/formations/licence-pro-web",
+                        "Article sur le référencement": "http://blog-de-shimrra.christophe-boucaut.fr/?p=457",
+                        "Retours sur la 6ème édition de be-zend": "http://blog-de-shimrra.christophe-boucaut.fr/?p=579",
+                        "Retours sur la licence": "http://blog-de-shimrra.christophe-boucaut.fr/?p=628",
+                        "Projet scolaire d'e-commerce": "https://github.com/ChristopheBoucaut/INSSET_ecommerce"
                     }
                 },
                 {
                     type: "school",
                     title: "DUT informatique",
                     organisation: "Université Paris 13 Nord",
-                    description: "",
-                    keywords: [],
+                    description: "schoolDUT.html",
+                    keywords: ["java", "python", "c", "Génie Logicielle", "HTML", "CSS", "PHP", "JS", "postgresql"],
                     dateStart: new Date("2010-09-01"),
                     dateEnd: new Date("2012-06-31"),
                     links: {
-                        mot: "link"
+                        "DUT informatique": "http://www.iutv.univ-paris13.fr/formations/dut/dut-informatique.html"
                     }
                 },
                 {
@@ -157,15 +164,15 @@
                     description: "",
                     keywords: [],
                     dateStart: new Date("2007-09-01"),
-                    dateEnd: new Date("2010-06-31"),
-                    links: {
-                        mot: "link"
-                    }
+                    dateEnd: new Date("2010-06-31")
                 }
             ];
 
             // generate diff date.
             for (var i = stepsCareer.length - 1; i >= 0; i--) {
+                if (stepsCareer[i].description) {
+                    stepsCareer[i].description = "views/careersDescription/"+stepsCareer[i].description;
+                }
                 stepsCareer[i].dateStartString = stringDate(stepsCareer[i].dateStart);
                 if (stepsCareer[i].dateEnd) {
                     stepsCareer[i].dateDiff = generateDiffDate(stepsCareer[i].dateStart, stepsCareer[i].dateEnd);
@@ -174,7 +181,6 @@
                     stepsCareer[i].dateDiff = generateDiffDate(stepsCareer[i].dateStart, new Date());
                     stepsCareer[i].dateEndString = "Aujourd'hui";
                 }
-                stepsCareer[i].description = $sce.trustAsHtml(stepsCareer[i].description);
             }
 
             $scope.stepsCareer = stepsCareer;

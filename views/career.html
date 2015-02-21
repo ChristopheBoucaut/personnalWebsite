@@ -22,7 +22,7 @@
                             <small>{{ stepCareer.dateStartString }} - {{ stepCareer.dateEndString }} ({{ stepCareer.dateDiff }})</small>
                         </div>
                     </div>
-                    <div class="modal-body" ng-bind-html="stepCareer.description">
+                    <div class="modal-body" ng-include="stepCareer.description">
                     </div>
                     <div class="modal-footer" ng-if="!objectEmpty(stepCareer.links) && stepCareer.keywords.length > 0">
                         <div class="text-left">

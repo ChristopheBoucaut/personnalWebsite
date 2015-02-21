@@ -3,7 +3,6 @@
 (function(angular) {
     var personnalWebsite = angular.module("personnalWebsite", [
         "ngRoute",
-        "ngSanitize",
 
         "personnalWebsiteControllers",
         "personnalWebsiteServices"
