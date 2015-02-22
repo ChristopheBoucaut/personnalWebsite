@@ -58,6 +58,8 @@
             id: "career-nav"
         },
         {
+            controller: "SkillController",
+            templateUrl: "views/skill.html",
             title: "Mes compétences",
             iconClass: "glyphicon glyphicon-book",
             link: "#/skills",

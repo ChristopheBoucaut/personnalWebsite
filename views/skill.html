@@ -1,0 +1,23 @@
+<link rel="stylesheet" type="text/css" href="css/skill.css">
+<div id="skill" class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-3" ng-repeat="(type, skills) in listSkills">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">{{ type }}</h3>
+                </div>
+                <div class="panel-body">
+                    <div ng-repeat="skill in skills | orderBy:'level':true">
+                        <div ng-attr-title="{{ skill.favorites ? 'Coup de coeur' : '' }}">
+                            <span ng-class="{'glyphicon glyphicon-heart ': skill.favorites}"></span>
+                            {{ skill.name }}
+                        </div>
+                        <div class="progress level-{{ skill.level }}" ng-attr-title="{{ skill.inProgress ? 'En cours de formation' : '' }}">
+                            <div class="progress-bar" ng-class="{'progress-bar-striped active': skill.inProgress}" role="progressbar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
