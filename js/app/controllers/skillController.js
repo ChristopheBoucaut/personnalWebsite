@@ -99,6 +99,16 @@
                         favorites: true
                     }
                 ],
+                "CMS": [
+                    {
+                        name: "Wordpress",
+                        level: 2
+                    },
+                    {
+                        name: "Prestashop",
+                        level: 4
+                    }
+                ],
                 "Devops": [
                     {
                         name: "Tests unitaires",
