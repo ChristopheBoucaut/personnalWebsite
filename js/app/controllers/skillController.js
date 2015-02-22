@@ -7,56 +7,77 @@
             var listSkills = {
                 "Développement backoffice": [
                     {
-                        name: "skill 1",
-                        level: 1,
-                        favorites: false,
-                        inProgress: true
+                        name: "PHP",
+                        level: 5,
+                        favorites: true
                     },
                     {
-                        name: "skill 2",
-                        level: 2,
-                        favorites: false,
-                        inProgress: true
-                    },
-                    {
-                        name: "skill 3",
+                        name: "Symfony 2",
                         level: 3,
-                        favorites: true,
                         inProgress: true
+                    },
+                    {
+                        name: "NodeJS (puis Meteor)",
+                        level: 1
+                    },
+                    {
+                        name: "Elasticsearch",
+                        level: 4,
+                        inProgress: true,
+                        favorites: true
+                    },
+                    {
+                        name: "Python (puis Django)",
+                        level: 1
+                    },
+                    {
+                        name: "Ruby (puis Ruby on Rails)",
+                        level: 0
                     }
                 ],
                 "Développement frontoffice": [
                     {
-                        name: "skill 1",
+                        name: "Javascript (POO)",
                         level: 4,
-                        favorites: false,
+                        favorites: true,
                         inProgress: true
                     },
                     {
-                        name: "skill 2",
-                        level: 5,
-                        favorites: false,
+                        name: "AngularJS",
+                        level: 4,
+                        favorites: true,
                         inProgress: true
                     },
                     {
-                        name: "skill 3",
-                        level: 5,
-                        favorites: true
+                        name: "HTML 5",
+                        level: 3
+                    },
+                    {
+                        name: "CSS 3",
+                        level: 2,
+                        inProgress: true
+                    },
+                    {
+                        name: "Foundation (sass)",
+                        level: 3,
+                        inProgress: true
+                    },
+                    {
+                        name: "Bootstrap",
+                        level: 2
                     }
                 ],
                 "Développement mobile": [
                     {
-                        name: "skill 1",
-                        level: 5,
-                        favorites: false
+                        name: "Android natif",
+                        level: 2
                     },
                     {
-                        name: "skill 2",
-                        level: 2,
-                        favorites: false
+                        name: "iOS natif",
+                        level: 1
                     },
                     {
-                        name: "skill 3",
+                        name: "Cordova",
                         level: 5,
                         favorites: true
                     }
@@ -64,7 +85,7 @@
                 "Travail en équipe": [
                     {
                         name: "SCRUM",
-                        level: 5,
+                        level: 3,
                         favorites: false
                     },
                     {
@@ -73,53 +94,38 @@
                         favorites: false
                     },
                     {
-                        name: "Git",
-                        level: 5,
-                        favorites: true
-                    },
-                    {
                         name: "Github",
-                        level: 5,
+                        level: 4,
                         favorites: true
                     }
                 ],
                 "Devops": [
                     {
-                        name: "SCRUM",
-                        level: 5,
-                        favorites: false
-                    },
-                    {
-                        name: "Trello",
+                        name: "Tests unitaires",
                         level: 2,
-                        favorites: false
+                        favorites: false,
+                        inProgress: true
                     },
                     {
                         name: "Git",
-                        level: 5,
+                        level: 3,
                         favorites: true
                     },
                     {
-                        name: "Github",
-                        level: 5,
-                        favorites: true
-                    }
-                ],
-                "Divers": [
-                    {
-                        name: "skill 1",
-                        level: 5,
-                        favorites: false
+                        name: "Docker",
+                        level: 0
                     },
                     {
-                        name: "skill 2",
-                        level: 2,
-                        favorites: false
+                        name: "Yeoman",
+                        level: 0
                     },
                     {
-                        name: "skill 3",
-                        level: 5,
-                        favorites: true
+                        name: "Openstack",
+                        level: 0
+                    },
+                    {
+                        name: "RabbitMQ",
+                        level: 0
                     }
                 ]
             };
