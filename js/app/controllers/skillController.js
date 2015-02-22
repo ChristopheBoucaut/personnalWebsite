@@ -13,7 +13,7 @@
                     },
                     {
                         name: "Symfony 2",
-                        level: 3,
+                        level: 4,
                         inProgress: true
                     },
                     {
@@ -54,27 +54,27 @@
                     },
                     {
                         name: "CSS 3",
-                        level: 2,
-                        inProgress: true
-                    },
-                    {
-                        name: "Foundation (sass)",
                         level: 3,
                         inProgress: true
                     },
                     {
+                        name: "Foundation (sass)",
+                        level: 4,
+                        inProgress: true
+                    },
+                    {
                         name: "Bootstrap",
-                        level: 2
+                        level: 3
                     }
                 ],
                 "Développement mobile": [
                     {
                         name: "Android natif",
-                        level: 2
+                        level: 3
                     },
                     {
                         name: "iOS natif",
-                        level: 1
+                        level: 2
                     },
                     {
                         name: "Cordova",
@@ -85,13 +85,11 @@
                 "Travail en équipe": [
                     {
                         name: "SCRUM",
-                        level: 3,
-                        favorites: false
+                        level: 3
                     },
                     {
                         name: "Trello",
-                        level: 2,
-                        favorites: false
+                        level: 3
                     },
                     {
                         name: "Github",
@@ -99,21 +97,37 @@
                         favorites: true
                     }
                 ],
-                "CMS": [
+                "Divers": [
                     {
                         name: "Wordpress",
-                        level: 2
+                        level: 3
                     },
                     {
                         name: "Prestashop",
+                        level: 4
+                    },
+                    {
+                        name: "API Twitter",
+                        level: 3
+                    },
+                    {
+                        name: "Bonnes pratiques",
+                        level: 4,
+                        inProgress: true
+                    },
+                    {
+                        name: "Référencement",
+                        level: 3
+                    },
+                    {
+                        name: "Encadrement stagiaire",
                         level: 4
                     }
                 ],
                 "Devops": [
                     {
                         name: "Tests unitaires",
-                        level: 2,
-                        favorites: false,
+                        level: 3,
                         inProgress: true
                     },
                     {
