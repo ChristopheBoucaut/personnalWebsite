@@ -7,12 +7,12 @@
                     <h3 class="panel-title">{{ type }}</h3>
                 </div>
                 <div class="panel-body">
-                    <div ng-repeat="skill in skills">
+                    <div ng-repeat="skill in skills | orderBy:'level':true">
                         <div ng-attr-title="{{ skill.favorites ? 'Coup de coeur' : '' }}">
                             <span ng-class="{'glyphicon glyphicon-heart ': skill.favorites}"></span>
                             {{ skill.name }}
                         </div>
-                        <div class="progress level-{{ skill.level }}" ng-attr-title="{{ skill.inProgress ? 'En cours de formation' : 'Formation terminée' }}">
+                        <div class="progress level-{{ skill.level }}" ng-attr-title="{{ skill.inProgress ? 'En cours de formation' : '' }}">
                             <div class="progress-bar" ng-class="{'progress-bar-striped active': skill.inProgress}" role="progressbar"></div>
                         </div>
                     </div>
