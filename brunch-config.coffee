@@ -5,7 +5,7 @@ exports.config =
 
     conventions:
         ignored: /^(app|(bower_components\/(bootstrap|jquery)\/(?!dist|fonts)))/
-        assets: /(bootstrap\/dist\/fonts)|(images)/
+        assets: /(bootstrap\/dist\/fonts)|(images)|(views)/
 
     modules:
         definition: false
@@ -29,3 +29,7 @@ exports.config =
                 before: [
                     'bower_components/bootstrap/dist/css/bootstrap.css'
                 ]
+    overrides:
+        production:
+            conventions:
+                assets: /(bootstrap\/dist\/fonts)|(images)/
