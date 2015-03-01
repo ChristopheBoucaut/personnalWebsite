@@ -14,26 +14,6 @@
     "jquery": "~2.1.x",
     "bootstrap": "3.3.*"
   },
-  "overrides": {
-    "angular": {
-      "main": "angular.js"
-    },
-    "angular-route": {
-      "main": "angular-route.js"
-    },
-    "angular-resource": {
-      "main": "angular-resource.js"
-    },
-    "jquery": {
-      "main": "./dist/jquery.js"
-    },
-    "bootstrap": {
-      "main": [
-        "./dist/css/bootstrap.css",
-        "./dist/js/bootstrap.js"
-      ]
-    }
-  },
   "ignore": [
     "**/.*",
     "node_modules",
