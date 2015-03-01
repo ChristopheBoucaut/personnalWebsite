@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Glyphicons Halflings';
+
+  src: url('../glyphicons-halflings-regular.eot');
+  src: url('../glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../glyphicons-halflings-regular.woff2') format('woff2'), url('../glyphicons-halflings-regular.woff') format('woff'), url('../glyphicons-halflings-regular.ttf') format('truetype'), url('../glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
 body {
     background-color: #f5f5f5;
 }
@@ -40,19 +47,19 @@ footer li a {
 }
 
 .icon-twitter {
-    background-image: url('../images/icons/twitter.png');
+    background-image: url('../icons/twitter.png');
 }
 .icon-google-plus {
-    background-image: url('../images/icons/googleplus.png');
+    background-image: url('../icons/googleplus.png');
 }
 .icon-github {
-    background-image: url('../images/icons/github.png');
+    background-image: url('../icons/github.png');
 }
 .icon-linkedin {
-    background-image: url('../images/icons/linkedin.png');
+    background-image: url('../icons/linkedin.png');
 }
 .icon-stackoverflow {
-    background-image: url('../images/icons/stackoverflow.png');
+    background-image: url('../icons/stackoverflow.png');
 }
 
 footer p {
