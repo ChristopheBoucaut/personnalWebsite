@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="panel panel-default" ng-repeat="project in projects">
+        <div class="panel-body">
+            <section class="row">
+                <article class="col-xs-12 col-sm-7">
+                    <h3 class="no-margin-top">
+                        {{ project.title }}<br/>
+                        <small>
+                            (<strong>{{ project.subtitle }}</strong> - {{ project.techno }})
+                        </small>
+                    </h3>
+                    <p ng-include="project.description"></p>
+                </article>
+                <aside class="col-sm-5 hidden-xs">
+                    <a ng-href="{{ project.link }}" target="_blank" title="{{ project.title }}">
+                        <img class="img-responsive" ng-src="{{ project.picture }}" alt="{{ project.title }}" />
+                    </a>
+                </aside>
+            </section>
+        </div>
+    </div>
+</div>

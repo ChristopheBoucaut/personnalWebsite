@@ -19,6 +19,11 @@ body nav li a span {
 
 body nav.showed+main  {
     margin-top: 50px;
+    padding-top: 20px;
+}
+
+main {
+    background-color: white;
 }
 
 footer {
@@ -69,6 +74,10 @@ footer p {
     margin: 0px;
 }
 
+.no-margin-top {
+    margin-top: 0px !important;
+}
+
 .no-margin-bottom {
-    margin-bottom: 0px;
+    margin-bottom: 0px !important;
 }
