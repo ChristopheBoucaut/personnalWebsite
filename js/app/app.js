@@ -44,7 +44,7 @@
         {
             controller: "ProjectController",
             templateUrl: "views/project.html",
-            title: "Mes projets",
+            title: "Portfolio",
             iconClass: "glyphicon glyphicon-folder-open",
             link: "#/projects",
             id: "projects-nav"
