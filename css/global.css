@@ -1,5 +1,16 @@
+@font-face {
+  font-family: 'Glyphicons Halflings';
+
+  src: url('../glyphicons-halflings-regular.eot');
+  src: url('../glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../glyphicons-halflings-regular.woff2') format('woff2'), url('../glyphicons-halflings-regular.woff') format('woff'), url('../glyphicons-halflings-regular.ttf') format('truetype'), url('../glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
 body {
     background-color: #f5f5f5;
+}
+
+body.modal-open {
+    overflow: auto;
 }
 
 body nav li a span {
@@ -40,20 +51,23 @@ footer li a {
     background-position: left center;
 }
 
-footer li a.icon-twitter {
-    background-image: url('../images/icons/twitter.png');
+.icon-twitter {
+    background-image: url('../icons/twitter.png');
 }
-footer li a.icon-google-plus {
-    background-image: url('../images/icons/googleplus.png');
+.icon-google-plus {
+    background-image: url('../icons/googleplus.png');
 }
-footer li a.icon-github {
-    background-image: url('../images/icons/github.png');
+.icon-github {
+    background-image: url('../icons/github.png');
 }
-footer li a.icon-linkedin {
-    background-image: url('../images/icons/linkedin.png');
+.icon-linkedin {
+    background-image: url('../icons/linkedin.png');
 }
-footer li a.icon-stackoverflow {
-    background-image: url('../images/icons/stackoverflow.png');
+.icon-stackoverflow {
+    background-image: url('../icons/stackoverflow.png');
+}
+.icon-mdn {
+    background-image: url('../icons/mdn.png');
 }
 
 footer p {
@@ -62,4 +76,8 @@ footer p {
 
 .no-margin-top {
     margin-top: 0px !important;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0px !important;
 }

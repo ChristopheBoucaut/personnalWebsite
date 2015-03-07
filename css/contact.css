@@ -1,0 +1,11 @@
+#contact li {
+    margin-bottom: 5px;
+}
+
+#contact li a {
+    padding-left: 40px;
+    display: inline-block;
+    line-height: 32px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}

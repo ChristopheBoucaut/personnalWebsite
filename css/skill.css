@@ -1,0 +1,20 @@
+.level-1 .progress-bar {
+    background-color: #d9534f;
+    width: 20%;
+}
+.level-2 .progress-bar {
+    background-color: #f0ad4e;
+    width: 40%;
+}
+.level-3 .progress-bar {
+    background-color: #e7e430;
+    width: 60%;
+}
+.level-4 .progress-bar {
+    background-color: #5bc0de;
+    width: 80%;
+}
+.level-5 .progress-bar {
+    background-color: #5cb85c;
+    width: 100%;
+}

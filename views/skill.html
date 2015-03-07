@@ -1,0 +1,70 @@
+<div id="skill" class="container">
+    <div class="alert alert-info" role="alert">
+        Cette page regroupe mes connaissances techniques en décrivant mon niveau dans chacune.
+    </div>
+    <section class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Légende</h3>
+        </div>
+        <article class="panel-body">
+            <div class="row">
+                <div class="col-xs-4 col-sm-2">
+                    <div class="progress level no-margin-bottom">
+                        <div class="progress-bar" role="progressbar"></div>
+                    </div>
+                    <p>A venir</p>
+                </div>
+                <div class="col-xs-4 col-sm-2">
+                    <div class="progress level-1 no-margin-bottom">
+                        <div class="progress-bar" role="progressbar"></div>
+                    </div>
+                    <p>Des notions</p>
+                </div>
+                <div class="col-xs-4 col-sm-2">
+                    <div class="progress level-2 no-margin-bottom">
+                        <div class="progress-bar" role="progressbar"></div>
+                    </div>
+                    <p>Les bases</p>
+                </div>
+                <div class="col-xs-4 col-sm-2">
+                    <div class="progress level-3 no-margin-bottom">
+                        <div class="progress-bar" role="progressbar"></div>
+                    </div>
+                    <p>Mis en pratique</p>
+                </div>
+                <div class="col-xs-4 col-sm-2">
+                    <div class="progress level-4 no-margin-bottom">
+                        <div class="progress-bar" role="progressbar"></div>
+                    </div>
+                    <p>Bonne expérience</p>
+                </div>
+                <div class="col-xs-4 col-sm-2">
+                    <div class="progress level-5 no-margin-bottom">
+                        <div class="progress-bar" role="progressbar"></div>
+                    </div>
+                    <p>Maîtrisé</p>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section class="row">
+        <div class="col-xs-12 col-sm-6 col-md-3" ng-repeat="(type, skills) in listSkills">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">{{ type }}</h3>
+                </div>
+                <article class="panel-body">
+                    <div ng-repeat="skill in skills | orderBy:'level':true">
+                        <div ng-attr-title="{{ skill.favorites ? 'Coup de coeur' : '' }}">
+                            <span ng-class="{'glyphicon glyphicon-heart ': skill.favorites}"></span>
+                            {{ skill.name }}
+                        </div>
+                        <div class="progress level-{{ skill.level }}" ng-attr-title="{{ skill.inProgress ? 'En cours de formation' : '' }}">
+                            <div class="progress-bar" ng-class="{'progress-bar-striped active': skill.inProgress}" role="progressbar"></div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+</div>

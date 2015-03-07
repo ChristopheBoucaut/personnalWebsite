@@ -50,18 +50,24 @@
             id: "projects-nav"
         },
         {
+            controller: "CareerController",
+            templateUrl: "views/career.html",
             title: "Mon parcours",
             iconClass: "glyphicon glyphicon-briefcase",
             link: "#/career",
             id: "career-nav"
         },
         {
+            controller: "SkillController",
+            templateUrl: "views/skill.html",
             title: "Mes compétences",
             iconClass: "glyphicon glyphicon-book",
             link: "#/skills",
             id: "skills-nav"
         },
         {
+            controller: "ContactController",
+            templateUrl: "views/contact.html",
             title: "Me contacter",
             iconClass: "glyphicon glyphicon-comment",
             link: "#/contact",

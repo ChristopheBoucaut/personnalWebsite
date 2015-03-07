@@ -1,0 +1,46 @@
+<section id="career" class="container">
+    <div class="alert alert-info" role="alert">Cliquez sur un élément de la frise pour obtenir plus de détail.</div>
+    <div class="step-career step-dotted step-half"></div>
+    <div class="step-career" ng-class="{'step-in-progress': !stepCareer.dateEnd}" ng-repeat="stepCareer in stepsCareer | orderBy:'dateStart':true">
+        <a data-toggle="modal" data-target="#modal-{{ $index }}">
+            <span class="glyphicon" ng-class="stepCareer.type == 'school' ? 'glyphicon-education' : (stepCareer.type == 'professional' ? 'glyphicon-briefcase' : 'glyphicon-heart')"></span>
+            <span>
+                <strong>{{ stepCareer.title }}</strong> - {{ stepCareer.organisation }}<br/>
+                <small class="text-muted">{{ stepCareer.dateDiff }}</small>
+            </span>
+        </a>
+        <div class="modal fade" id="modal-{{ $index }}">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h3 class="modal-title">
+                            {{ stepCareer.title }} <small>({{ stepCareer.organisation }})</small>
+                        </h3>
+                        <div class="text-muted">
+                            <small>{{ stepCareer.dateStartString }} - {{ stepCareer.dateEndString }} ({{ stepCareer.dateDiff }})</small>
+                        </div>
+                    </div>
+                    <div class="modal-body" ng-include="stepCareer.description">
+                    </div>
+                    <div class="modal-footer" ng-if="!objectEmpty(stepCareer.links) && stepCareer.keywords.length > 0">
+                        <div class="text-left">
+                            <div ng-if="!objectEmpty(stepCareer.links)">Liens utiles</div>
+                            <ul ng-if="!objectEmpty(stepCareer.links)">
+                                <li ng-repeat="(contentLink, link) in stepCareer.links">
+                                    <a ng-href="{{ link }}" target="_blank">{{ contentLink }}</a>
+                                </li>
+                            </ul>
+
+                            <div ng-if="stepCareer.keywords.length > 0">Mots clés</div>
+                            <ul class="text-muted" id="keywords" ng-if="stepCareer.keywords.length > 0">
+                                <li ng-repeat="keyword in stepCareer.keywords">{{ keyword }}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="step-career step-half"></div>
+</section>

@@ -1,0 +1,26 @@
+{
+  "name": "personnalWebsite",
+  "version": "0.0.1",
+  "description": "Personnal website with angularJS",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ChristopheBoucaut/personnalWebsite.git"
+  },
+  "author": "Christophe Boucaut",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/ChristopheBoucaut/personnalWebsite/issues"
+  },
+  "dependencies": {
+    "brunch": ">= 1.0 < 1.8",
+    "javascript-brunch": ">= 1.0 < 1.8",
+    "css-brunch": ">= 1.0 < 1.8",
+    "uglify-js-brunch": ">= 1.0 < 1.8",
+    "clean-css-brunch": ">= 1.0 < 1.8",
+    "auto-reload-brunch": ">= 1.0 < 1.8"
+  }
+}
