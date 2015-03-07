@@ -1,54 +1,19 @@
 <div class="container">
-    <div class="panel panel-default">
+    <div class="panel panel-default" ng-repeat="project in projects">
         <div class="panel-body">
             <section class="row">
                 <article class="col-xs-12 col-sm-7">
                     <h3 class="no-margin-top">
-                        Sauvons nos tombes<br/>
+                        {{ project.title }}<br/>
                         <small>
-                            (<strong>Application mobile</strong> - AngularJS / Cordova & <strong>API REST</strong> - Symfony 2)
+                            (<strong>{{ project.subtitle }}</strong> - {{ project.techno }})
                         </small>
                     </h3>
-                    <p>Description</p>
+                    <p ng-include="project.description"></p>
                 </article>
                 <aside class="col-sm-5 hidden-xs">
-                    <a href="http://www.geneanet.org/sauvons_nos_tombes" target="_blank" title="Sauvons nos tombes">
-                        <img class="img-responsive" src="images/projects/sauvonsnostombes.png" alt="Sauvons nos tombes" />
-                    </a>
-                </aside>
-            </section>
-        </div>
-    </div>
-    <div class="panel panel-default">
-        <div class="panel-body">
-            <section class="row">
-                <aside class="col-sm-4 hidden-xs">
-                    <a href="http://www.geneanet.org/boutique/" target="_blank" title="Geneanet boutique">
-                        <img class="img-responsive" src="images/projects/boutique.png" alt="Geneanet boutique" />
-                    </a>
-                </aside>
-                <article class="col-xs-12 col-sm-8">
-                    <h3 class="no-margin-top">
-                        Geneanet boutique<br/>
-                        <small>
-                            (<strong>Site web e-commerce</strong> - Prestashop)
-                        </small>
-                    </h3>
-                    <p>Description</p>
-                </article>
-            </section>
-        </div>
-    </div>
-    <div class="panel panel-default">
-        <div class="panel-body">
-            <section class="row">
-                <article class="col-xs-12 col-sm-8">
-                    <h3 class="no-margin-top">Geneastar<br/><small>(<strong>Site web</strong> - PHP)</small></h3>
-                    <p>Description</p>
-                </article>
-                <aside class="col-sm-4 hidden-xs">
-                    <a href="http://www.geneastar.org/" target="_blank" title="Geneastar">
-                        <img class="img-responsive" src="images/projects/geneastar.png" alt="Geneastar" />
+                    <a ng-href="{{ project.link }}" target="_blank" title="{{ project.title }}">
+                        <img class="img-responsive" ng-src="{{ project.picture }}" alt="{{ project.title }}" />
                     </a>
                 </aside>
             </section>
