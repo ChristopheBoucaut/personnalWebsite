@@ -61,6 +61,9 @@ footer li a {
 .icon-stackoverflow {
     background-image: url('../icons/stackoverflow.png');
 }
+.icon-mdn {
+    background-image: url('../icons/mdn.png');
+}
 
 footer p {
     margin: 0px;
