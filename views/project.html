@@ -10,6 +10,7 @@
                         </small>
                     </h3>
                     <p ng-include="project.description"></p>
+                    <p class="only-print">Projet : {{ project.link }}</p>
                 </article>
                 <aside class="col-sm-5 hidden-xs">
                     <a ng-href="{{ project.link }}" target="_blank" title="{{ project.title }}">

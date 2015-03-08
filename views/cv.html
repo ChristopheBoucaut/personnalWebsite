@@ -1,0 +1,21 @@
+<section id="cv">
+    <div class="container">
+        <button class="no-print btn btn-default glyphicon glyphicon-print" ng-click="startPrint()">&nbsp;Imprimer</button>
+    </div>
+    <div class="container only-print">
+        <h2 class="">Christophe Boucaut</h2>
+        <p class="no-margin-bottom">Développeur web - boucaut.christophe[AT]gmail.com</p>
+    </div>
+    <div class="container">
+        <h2>Mes projets</h2>
+    </div>
+    <div ng-include="'views/project.html'" ng-controller="ProjectController"></div>
+    <div class="container">
+        <h2>Mon parcours</h2>
+    </div>
+    <div ng-include="'views/career.html'" ng-controller="CareerController"></div>
+    <div class="container">
+        <h2>Mes compétences</h2>
+    </div>
+    <div ng-include="'views/skill.html'" ng-controller="SkillController"></div>
+</section>

@@ -1,0 +1,25 @@
+#cv #career .alert,
+#cv #skill .alert {
+    display: none;
+}
+
+#cv #career .step-career {
+    position: relative;
+    height: auto;
+    width: auto;
+    margin: 0;
+    border: 0;
+}
+
+#cv #career .step-career a,
+#cv #career .step-career div.modal {
+    display: none;
+}
+
+#cv #career .to-print {
+    display: block;
+}
+
+#cv #skill > section.panel {
+    display: none;
+}

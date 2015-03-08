@@ -78,6 +78,14 @@
             iconClass: "glyphicon glyphicon-pencil",
             link: "http://blog-de-shimrra.christophe-boucaut.fr/",
             id: "blog-nav"
+        },
+        {
+            controller: "CvController",
+            templateUrl: "views/cv.html",
+            title: "CV",
+            iconClass: "glyphicon glyphicon-open",
+            link: "#/cv",
+            id: "cv-nav"
         }
     ]);
 
