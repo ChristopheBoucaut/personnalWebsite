@@ -105,11 +105,15 @@ footer p {
         padding-top: 0;
     }
 
-    .panel-default {
+    .panel.panel-default {
         border: 0;
     }
 
     .panel-default .panel-body {
         padding: 0;
+    }
+
+    h2 {
+        margin-top: 0;
     }
 }

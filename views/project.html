@@ -6,13 +6,12 @@
                     <h3 class="no-margin-top">
                         {{ project.title }}<br/>
                         <small>
-                            (<strong>{{ project.subtitle }}</strong> - {{ project.techno }})
+                            (<strong>{{ project.subtitle }}</strong> - {{ project.techno }})<br/><span class="only-print">{{ project.link }}</span>
                         </small>
                     </h3>
                     <p ng-include="project.description"></p>
-                    <p class="only-print">Projet : {{ project.link }}</p>
                 </article>
-                <aside class="col-sm-5 hidden-xs">
+                <aside class="no-print col-sm-5 hidden-xs">
                     <a ng-href="{{ project.link }}" target="_blank" title="{{ project.title }}">
                         <img class="img-responsive" ng-src="{{ project.picture }}" alt="{{ project.title }}" />
                     </a>

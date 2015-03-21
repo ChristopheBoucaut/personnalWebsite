@@ -67,7 +67,7 @@
             </div>
             <p class="only-print">
                 <strong>{{ type }}</strong> : 
-                <span class="before-separator" ng-repeat="skill in skills | orderBy:'level':true" ng-if="skill.level > 0">
+                <span class="before-separator" ng-repeat="skill in skills | orderBy:'level':true" ng-if="skill.level > 2">
                     {{ skill.name }}
                 </span>
             </p>

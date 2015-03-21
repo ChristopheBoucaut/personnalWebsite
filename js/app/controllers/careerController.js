@@ -54,7 +54,8 @@
                     dateEnd: new Date("2012-08-31"),
                     links: {
                         "Groupe Soufflet": "http://www.soufflet.com/"
-                    }
+                    },
+                    hidePrint: true
                 },
                 {
                     type: "professional",
@@ -63,7 +64,8 @@
                     description: "saisonnieEdf.html",
                     keywords: ["documentation"],
                     dateStart: new Date("2012-07-01"),
-                    dateEnd: new Date("2012-07-31")
+                    dateEnd: new Date("2012-07-31"),
+                    hidePrint: true
                 },
                 {
                     type: "professional",
@@ -75,7 +77,8 @@
                     dateEnd: new Date("2012-06-15"),
                     links: {
                         Geneastar: "http://www.geneastar.org/"
-                    }
+                    },
+                    hidePrint: true
                 },
                 {
                     type: "volunteer",
@@ -87,7 +90,8 @@
                     dateEnd: new Date("2012-02-01"),
                     links: {
                         Gatewars: "http://gatewars.eu/"
-                    }
+                    },
+                    hidePrint: true
                 },
                 {
                     type: "professional",
@@ -99,7 +103,8 @@
                     dateEnd: new Date("2011-08-31"),
                     links: {
                         "Groupe Soufflet": "http://www.soufflet.com/"
-                    }
+                    },
+                    hidePrint: true
                 },
                 {
                     type: "volunteer",
@@ -155,7 +160,8 @@
                     dateEnd: new Date("2012-06-31"),
                     links: {
                         "DUT informatique": "http://www.iutv.univ-paris13.fr/formations/dut/dut-informatique.html"
-                    }
+                    },
+                    hidePrint: true
                 },
                 {
                     type: "school",
@@ -164,7 +170,8 @@
                     description: "",
                     keywords: [],
                     dateStart: new Date("2007-09-01"),
-                    dateEnd: new Date("2010-06-31")
+                    dateEnd: new Date("2010-06-31"),
+                    hidePrint: true
                 }
             ];
 
