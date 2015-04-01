@@ -76,7 +76,7 @@
         {
             title: "Mon blog",
             iconClass: "glyphicon glyphicon-pencil",
-            link: "http://blog-de-shimrra.christophe-boucaut.fr/",
+            link: "http://blog.christophe-boucaut.fr/",
             id: "blog-nav"
         },
         {
