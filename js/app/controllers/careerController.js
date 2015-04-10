@@ -29,7 +29,7 @@
                     dateEnd: new Date("2013-08-23"),
                     links: {
                         "Geneanet boutique": "http://www.geneanet.org/boutique/",
-                        "Exemple de surcharge pour Prestashop" : "http://blog-de-shimrra.christophe-boucaut.fr/?p=586"
+                        "Exemple de surcharge pour Prestashop" : "http://blog.christophe-boucaut.fr/mettre-en-place-un-systeme-de-serveur-maitre-et-esclaves-sous-prestashop/"
                     }
                 },
                 {
@@ -129,9 +129,9 @@
                     dateEnd: null,
                     links: {
                         "Master CCM": "http://www.insset.u-picardie.fr/formations/master-ccm",
-                        "Article sur l'inauguration du master": "http://blog-de-shimrra.christophe-boucaut.fr/?p=326",
                         "Journée be-zend organisée par les deuxièmes années du master": "http://www.matele.tv/default.asp?categorie_id=5&emission_id=24&video_id=1648",
-                        "fabric": "http://www.fabfile.org/"
+                        "fabric": "http://www.fabfile.org/",
+                        "Articles sur la 8ème édition de Be-Zend": "http://blog.christophe-boucaut.fr/be-zend-2015/"
                     }
                 },
                 {
@@ -143,10 +143,8 @@
                     dateStart: new Date("2012-09-02"),
                     dateEnd: new Date("2013-06-23"),
                     links: {
-                        "Licence progessionnelle web": "http://www.insset.u-picardie.fr/formations/licence-pro-web",
-                        "Article sur le référencement": "http://blog-de-shimrra.christophe-boucaut.fr/?p=457",
-                        "Retours sur la 6ème édition de be-zend": "http://blog-de-shimrra.christophe-boucaut.fr/?p=579",
-                        "Retours sur la licence": "http://blog-de-shimrra.christophe-boucaut.fr/?p=628",
+                        "Licence professionnelle web": "http://www.insset.u-picardie.fr/formations/licence-pro-web",
+                        "Article sur le référencement": "http://blog.christophe-boucaut.fr/chien-ou-chiens-le-referencement-de-votre-site-web/",
                         "Projet scolaire d'e-commerce": "https://github.com/ChristopheBoucaut/INSSET_ecommerce"
                     }
                 },
