@@ -6,7 +6,10 @@
                     <h3 class="no-margin-top">
                         {{ project.title }}<br/>
                         <small>
-                            (<strong>{{ project.subtitle }}</strong> - {{ project.techno }})<br/><span class="only-print">{{ project.link }}</span>
+                            (<strong>{{ project.subtitle }}</strong> - {{ project.techno }})<br/>
+                            <a ng-href="{{ project.link }}" target="_blank">
+                                Voir le projet
+                            </a>
                         </small>
                     </h3>
                     <p ng-include="project.description"></p>

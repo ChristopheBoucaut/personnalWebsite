@@ -14,12 +14,28 @@
                     link: "http://www.geneanet.org/sauvons_nos_tombes"
                 },
                 {
+                    title: "CloudIn'tra",
+                    subtitle: "Site vitrine",
+                    techno: "Symfony2 / Bootstrap",
+                    description: "views/projectsDescription/cloudintra.html",
+                    picture: "images/projects/cloudintra.png",
+                    link: "http://cloudintra.fr/"
+                },
+                {
                     title: "Geneanet boutique",
                     subtitle: "Site web e-commerce",
                     techno: "Prestashop",
                     description: "views/projectsDescription/geneanet_boutique.html",
                     picture: "images/projects/boutique.png",
                     link: "http://www.geneanet.org/boutique/"
+                },
+                {
+                    title: "Espérance Rando",
+                    subtitle: "Site web d'association de randonnée",
+                    techno: "Wordpress",
+                    description: "views/projectsDescription/esperance_rando.html",
+                    picture: "images/projects/esperancerando.png",
+                    link: "http://esperancerando.fr/"
                 },
                 {
                     title: "Geneastar",

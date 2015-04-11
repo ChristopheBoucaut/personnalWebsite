@@ -8,7 +8,7 @@ bower install
 
 + **For dev:**
 ``` shell
-./node_modules/brunch/bin/brunch w --server (use normal server and not localhost:3333 for now).
+./node_modules/brunch/bin/brunch w --server
 ```
 
 + **For build the production (minify css & js):**

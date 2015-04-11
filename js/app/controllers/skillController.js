@@ -89,7 +89,8 @@
                     },
                     {
                         name: "Trello",
-                        level: 3
+                        level: 4,
+                        favorites: true
                     },
                     {
                         name: "Github",
@@ -111,7 +112,7 @@
                         level: 3
                     },
                     {
-                        name: "Bonnes pratiques",
+                        name: "Bonnes pratiques / travail en équipe",
                         level: 4,
                         inProgress: true
                     },
@@ -137,7 +138,9 @@
                     },
                     {
                         name: "Docker",
-                        level: 0
+                        level: 1,
+                        favorites: true,
+                        inProgress: true
                     },
                     {
                         name: "Yeoman",
@@ -145,11 +148,13 @@
                     },
                     {
                         name: "Openstack",
-                        level: 0
+                        level: 1
                     },
                     {
                         name: "RabbitMQ",
-                        level: 0
+                        level: 1,
+                        favorites: true,
+                        inProgress: true
                     }
                 ]
             };
