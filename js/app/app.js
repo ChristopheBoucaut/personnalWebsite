@@ -18,8 +18,8 @@
                     {
                         controller: "HomepageController",
                         templateUrl: "views/homepage.html",
-                        navigationBar: false,
-                        footer: false
+                        navigationBar: true,
+                        footer: true
                     }
                 ).otherwise({ redirectTo: "/" });
                 // Add alls routes from configuration.
