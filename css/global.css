@@ -69,6 +69,9 @@ footer li a {
 .icon-mdn {
     background-image: url('../icons/mdn.png');
 }
+.icon-gitter {
+    background-image: url('../icons/gitter.png');
+}
 
 footer p {
     margin: 0px;
