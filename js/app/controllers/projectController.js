@@ -1,6 +1,6 @@
-"use strict";
-
 (function(angular) {
+    "use strict";
+
     angular.module("personnalWebsiteControllers").controller("ProjectController", [
         "$scope",
         function($scope) {
@@ -18,8 +18,7 @@
                     subtitle: "Site vitrine",
                     techno: "Symfony2 / Bootstrap",
                     description: "views/projectsDescription/cloudintra.html",
-                    picture: "images/projects/cloudintra.png",
-                    link: "http://cloudintra.fr/"
+                    picture: "images/projects/cloudintra.png"
                 },
                 {
                     title: "Geneanet boutique",
