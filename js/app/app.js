@@ -1,6 +1,6 @@
-"use strict";
-
 (function(angular) {
+    "use strict";
+    
     var personnalWebsite = angular.module("personnalWebsite", [
         "ngRoute",
 
