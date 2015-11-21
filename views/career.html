@@ -23,7 +23,7 @@
                     </div>
                     <div class="modal-body" ng-include="stepCareer.description">
                     </div>
-                    <div class="modal-footer" ng-if="!objectEmpty(stepCareer.links) && stepCareer.keywords.length > 0">
+                    <div class="modal-footer" ng-if="!objectEmpty(stepCareer.links) || stepCareer.keywords.length > 0">
                         <div class="text-left">
                             <div ng-if="!objectEmpty(stepCareer.links)">Liens utiles</div>
                             <ul ng-if="!objectEmpty(stepCareer.links)">

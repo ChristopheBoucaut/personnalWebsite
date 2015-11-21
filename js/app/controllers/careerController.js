@@ -1,6 +1,6 @@
-"use strict";
-
 (function(angular) {
+    "use strict";
+
     angular.module("personnalWebsiteControllers").controller("CareerController", [
         "$scope",
         function($scope) {
@@ -9,14 +9,39 @@
                     type: "professional",
                     title: "Développeur web",
                     organisation: "Geneanet",
+                    description: "devWebGeneanetCdi.html",
+                    keywords: ["elasticsearch", "foundation", "symfony2"],
+                    dateStart: new Date("2015-09-03"),
+                    dateEnd: null,
+                    links: {
+                        "Geneanet": "http://www.geneanet.org/"
+                    }
+                },
+                {
+                    type: "volunteer",
+                    title: "Hackathon de Saint-Quentin",
+                    organisation: "CloudIn'tra",
+                    description: "devCloudintra2.html",
+                    keywords: ["AngularJS", "Google App Engine", "Grunt", "Jasmine"],
+                    dateStart: new Date("2015-05-18"),
+                    dateEnd: new Date("2015-05-22"),
+                    links: {
+                        "Informations sur l'évènement": "http://www.agglo-saint-quentin.fr/1139-hackathon-2015.htm"
+                    }
+                },
+                {
+                    type: "professional",
+                    title: "Développeur web",
+                    organisation: "Geneanet",
                     description: "devWebGeneanet.html",
                     keywords: ["elasticsearch", "api twitter", "cordova", "angularJS", "symfony2", "API rest"],
                     dateStart: new Date("2013-09-02"),
-                    dateEnd: null,
+                    dateEnd: new Date("2015-09-02"),
                     links: {
                         "Sauvons nos tombes": "http://www.geneanet.org/sauvons_nos_tombes",
                         "customCamera (plugin cordova)": "https://github.com/geneanet/customCamera",
-                        "customCamera (plugin angularJS)": "https://github.com/geneanet/customCameraAngular"
+                        "customCamera (plugin angularJS)": "https://github.com/geneanet/customCameraAngular",
+                        "Hier et aujourd'hui": "http://www.geneanet.org/hier_et_aujourdhui"
                     }
                 },
                 {
@@ -126,7 +151,7 @@
                     description: "schoolCCM.html",
                     keywords: ["kanban", "emberjs", "déploiement amazon", "openstack", "android", "ios"],
                     dateStart: new Date("2013-09-02"),
-                    dateEnd: null,
+                    dateEnd: new Date("2015-09-02"),
                     links: {
                         "Master CCM": "http://www.insset.u-picardie.fr/formations/master-ccm",
                         "Journée be-zend organisée par les deuxièmes années du master": "http://www.matele.tv/default.asp?categorie_id=5&emission_id=24&video_id=1648",
@@ -193,10 +218,10 @@
 
             /**
              * To generate a string to discribe difference between two dates.
-             * 
+             *
              * @param {Date} oldDate    Oldest date.
              * @param {Date} recentDate Latest date.
-             * 
+             *
              * @return {String}
              */
             function generateDiffDate(oldDate, recentDate) {
@@ -237,7 +262,7 @@
 
             /**
              * Check if current navigator support toLocaleDateString() function.
-             * 
+             *
              * @return {boolean}
              */
             function toLocaleDateStringSupportsLocales() {
@@ -251,9 +276,9 @@
 
             /**
              * Stringify a date.
-             * 
+             *
              * @param {Date} date Date to stringify
-             * 
+             *
              * @return {string}
              */
             function stringDate(date) {
@@ -272,9 +297,9 @@
 
             /**
              * Test if object is empty.
-             * 
+             *
              * @param {object} obj Object to test.
-             * 
+             *
              * @return {boolean}
              */
             function objectEmpty(obj) {
