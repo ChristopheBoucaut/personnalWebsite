@@ -1,6 +1,6 @@
-"use strict";
-
 (function(angular) {
+    "use strict";
+
     angular.module("personnalWebsiteControllers").controller("SkillController", [
         "$scope",
         function($scope) {
@@ -31,7 +31,7 @@
                         level: 1
                     },
                     {
-                        name: "Ruby (puis Ruby on Rails)",
+                        name: "Electron",
                         level: 0
                     }
                 ],
@@ -40,7 +40,7 @@
                         name: "Javascript (POO)",
                         level: 4,
                         favorites: true,
-                        inProgress: true
+                        inProgress: false
                     },
                     {
                         name: "AngularJS",
@@ -128,7 +128,7 @@
                 "Devops": [
                     {
                         name: "Tests unitaires",
-                        level: 3,
+                        level: 4,
                         inProgress: true
                     },
                     {
@@ -138,13 +138,13 @@
                     },
                     {
                         name: "Docker",
-                        level: 1,
+                        level: 2,
                         favorites: true,
                         inProgress: true
                     },
                     {
-                        name: "Yeoman",
-                        level: 0
+                        name: "Brunch",
+                        level: 1
                     },
                     {
                         name: "Openstack",
@@ -152,7 +152,7 @@
                     },
                     {
                         name: "RabbitMQ",
-                        level: 1,
+                        level: 4,
                         favorites: true,
                         inProgress: true
                     }
