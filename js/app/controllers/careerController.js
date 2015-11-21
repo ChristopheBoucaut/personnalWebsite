@@ -41,7 +41,8 @@
                         "Sauvons nos tombes": "http://www.geneanet.org/sauvons_nos_tombes",
                         "customCamera (plugin cordova)": "https://github.com/geneanet/customCamera",
                         "customCamera (plugin angularJS)": "https://github.com/geneanet/customCameraAngular",
-                        "Hier et aujourd'hui": "http://www.geneanet.org/hier_et_aujourdhui"
+                        "Hier et aujourd'hui": "http://www.geneanet.org/hier_et_aujourdhui",
+                        "Hier et aujourd'hui version web": "http://www.geneanet.org/hier_et_aujourdhui/view/737357#78"
                     }
                 },
                 {
