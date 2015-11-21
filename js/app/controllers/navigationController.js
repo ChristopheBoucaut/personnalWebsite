@@ -1,6 +1,6 @@
-"use strict";
-
 (function(angular) {
+    "use strict";
+
     angular.module("personnalWebsiteControllers").controller("NavigationController", [
         "$scope",
         "$element",

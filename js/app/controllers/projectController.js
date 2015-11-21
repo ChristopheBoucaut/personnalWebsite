@@ -1,10 +1,25 @@
-"use strict";
-
 (function(angular) {
+    "use strict";
+
     angular.module("personnalWebsiteControllers").controller("ProjectController", [
         "$scope",
         function($scope) {
             var projects = [
+                {
+                    title: "Hier et aujourd'hui",
+                    subtitle: "Application mobile / API REST",
+                    techno: "AngularJS / Cordova / Symfony 2",
+                    description: "views/projectsDescription/hier_et_aujourdhui.html",
+                    picture: "images/projects/hieretaujourdhui.png",
+                    link: "http://www.geneanet.org/hier_et_aujourdhui"
+                },
+                {
+                    title: "CloudIn'tra manager",
+                    subtitle: "Gestion d'abonnement / Material Design / Google App Engine",
+                    techno: "AngularJS / Angular Material",
+                    description: "views/projectsDescription/cloudintramanager.html",
+                    picture: "images/projects/cloudintramanager.png"
+                },
                 {
                     title: "Sauvons nos tombes",
                     subtitle: "Application mobile / API REST",
@@ -18,8 +33,7 @@
                     subtitle: "Site vitrine",
                     techno: "Symfony2 / Bootstrap",
                     description: "views/projectsDescription/cloudintra.html",
-                    picture: "images/projects/cloudintra.png",
-                    link: "http://cloudintra.fr/"
+                    picture: "images/projects/cloudintra.png"
                 },
                 {
                     title: "Geneanet boutique",
