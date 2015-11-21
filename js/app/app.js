@@ -52,7 +52,7 @@
         {
             controller: "CareerController",
             templateUrl: "views/career.html",
-            title: "Mon parcours",
+            title: "Parcours",
             iconClass: "glyphicon glyphicon-briefcase",
             link: "#/career",
             id: "career-nav"
@@ -60,7 +60,7 @@
         {
             controller: "SkillController",
             templateUrl: "views/skill.html",
-            title: "Mes compétences",
+            title: "Compétences",
             iconClass: "glyphicon glyphicon-book",
             link: "#/skills",
             id: "skills-nav"
@@ -68,13 +68,13 @@
         {
             controller: "ContactController",
             templateUrl: "views/contact.html",
-            title: "Me contacter",
+            title: "Contact",
             iconClass: "glyphicon glyphicon-comment",
             link: "#/contact",
             id: "contact-nav"
         },
         {
-            title: "Mon blog",
+            title: "Blog",
             iconClass: "glyphicon glyphicon-pencil",
             link: "http://blog.christophe-boucaut.fr/",
             id: "blog-nav"
