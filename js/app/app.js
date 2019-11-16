@@ -76,7 +76,7 @@
         {
             title: "Blog",
             iconClass: "glyphicon glyphicon-pencil",
-            link: "http://blog.christophe-boucaut.fr/",
+            link: "https://blog.christophe-boucaut.fr/",
             id: "blog-nav"
         },
         {

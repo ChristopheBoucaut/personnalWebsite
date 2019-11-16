@@ -10,11 +10,20 @@
                     title: "Développeur web",
                     organisation: "Geneanet",
                     description: "devWebGeneanetCdi.html",
-                    keywords: ["elasticsearch", "foundation", "symfony2"],
+                    keywords: ["elasticsearch", "foundation", "symfony", "rabbitmq", "websocket", "extension chrome", "phpunit"],
                     dateStart: new Date("2015-09-03"),
                     dateEnd: null,
                     links: {
-                        "Geneanet": "http://www.geneanet.org/"
+                        "Geneanet": "https://www.geneanet.org/",
+                        "Correspondances intelligentes": "https://www.geneanet.org/blog/post/2016/06/nouveau-sur-geneanet-les-correspondances-intelligentes",
+                        "Comparaison": "https://www.geneanet.org/product/compare",
+                        "Les alertes": "https://www.geneanet.org/blog/post/2019/04/bien-utiliser-vos-alertes-manuelles",
+                        "Extension chrome": "https://www.geneanet.org/explore/labs/post/extension-chrome-geneanet/",
+                        "Cimetières": "https://www.geneanet.org/cimetieres/",
+                        "Cartes postales": "https://www.geneanet.org/cartes-postales/",
+                        "Métiers": "https://www.geneanet.org/metiers/",
+                        "Grands moments de l'Histoire": "https://www.geneanet.org/explore/great-history-times/",
+                        "Retrouver mes ancêtres": "https://www.geneanet.org/retrouver-mes-ancetres/"
                     }
                 },
                 {
@@ -26,7 +35,7 @@
                     dateStart: new Date("2015-05-18"),
                     dateEnd: new Date("2015-05-22"),
                     links: {
-                        "Informations sur l'évènement": "http://www.agglo-saint-quentin.fr/1139-hackathon-2015.htm"
+                        "Informations sur l'évènement": "https://www.agglo-saint-quentin.fr/1139-hackathon-2015.htm"
                     }
                 },
                 {
@@ -38,11 +47,11 @@
                     dateStart: new Date("2013-09-02"),
                     dateEnd: new Date("2015-09-02"),
                     links: {
-                        "Sauvons nos tombes": "http://www.geneanet.org/sauvons_nos_tombes",
+                        "Sauvons nos tombes": "https://www.geneanet.org/sauvons_nos_tombes",
                         "customCamera (plugin cordova)": "https://github.com/geneanet/customCamera",
                         "customCamera (plugin angularJS)": "https://github.com/geneanet/customCameraAngular",
-                        "Hier et aujourd'hui": "http://www.geneanet.org/hier_et_aujourdhui",
-                        "Hier et aujourd'hui version web": "http://www.geneanet.org/hier_et_aujourdhui/view/737357#78"
+                        "Hier et aujourd'hui": "https://www.geneanet.org/hier_et_aujourdhui",
+                        "Hier et aujourd'hui version web": "https://www.geneanet.org/hier_et_aujourdhui/view/737357#78"
                     }
                 },
                 {
@@ -54,8 +63,8 @@
                     dateStart: new Date("2013-03-18"),
                     dateEnd: new Date("2013-08-23"),
                     links: {
-                        "Geneanet boutique": "http://www.geneanet.org/boutique/",
-                        "Exemple de surcharge pour Prestashop" : "http://blog.christophe-boucaut.fr/mettre-en-place-un-systeme-de-serveur-maitre-et-esclaves-sous-prestashop/"
+                        "Geneanet boutique": "https://www.geneanet.org/boutique/",
+                        "Exemple de surcharge pour Prestashop" : "https://blog.christophe-boucaut.fr/mettre-en-place-un-systeme-de-serveur-maitre-et-esclaves-sous-prestashop/"
                     }
                 },
                 {
@@ -67,7 +76,7 @@
                     dateStart: new Date("2012-11-03"),
                     dateEnd: new Date("2013-04-01"),
                     links: {
-                        "Esperance Rando": "http://esperancerando.fr/"
+                        "Esperance Rando": "https://esperancerando.fr/"
                     }
                 },
                 {
@@ -79,7 +88,7 @@
                     dateStart: new Date("2012-08-01"),
                     dateEnd: new Date("2012-08-31"),
                     links: {
-                        "Groupe Soufflet": "http://www.soufflet.com/"
+                        "Groupe Soufflet": "https://www.soufflet.com/"
                     },
                     hidePrint: true
                 },
@@ -102,7 +111,7 @@
                     dateStart: new Date("2012-04-16"),
                     dateEnd: new Date("2012-06-15"),
                     links: {
-                        Geneastar: "http://www.geneastar.org/"
+                        Geneastar: "https://www.geneastar.org/"
                     },
                     hidePrint: true
                 },
@@ -128,7 +137,7 @@
                     dateStart: new Date("2011-08-01"),
                     dateEnd: new Date("2011-08-31"),
                     links: {
-                        "Groupe Soufflet": "http://www.soufflet.com/"
+                        "Groupe Soufflet": "https://www.soufflet.com/"
                     },
                     hidePrint: true
                 },
@@ -154,10 +163,10 @@
                     dateStart: new Date("2013-09-02"),
                     dateEnd: new Date("2015-09-02"),
                     links: {
-                        "Master CCM": "http://www.insset.u-picardie.fr/formations/master-ccm",
-                        "Journée be-zend organisée par les deuxièmes années du master": "http://www.matele.tv/default.asp?categorie_id=5&emission_id=24&video_id=1648",
-                        "fabric": "http://www.fabfile.org/",
-                        "Articles sur la 8ème édition de Be-Zend": "http://blog.christophe-boucaut.fr/be-zend-2015/"
+                        "Master CCM": "http://www.insset.u-picardie.fr/formations/master-informatique/master-ccm",
+                        "Journée be-zend organisée par les deuxièmes années du master": "https://www.matele.tv/default.asp?categorie_id=5&emission_id=24&video_id=1648",
+                        "fabric": "https://www.fabfile.org/",
+                        "Articles sur la 8ème édition de Be-Zend": "https://blog.christophe-boucaut.fr/be-zend-2015/"
                     }
                 },
                 {
@@ -169,8 +178,8 @@
                     dateStart: new Date("2012-09-02"),
                     dateEnd: new Date("2013-06-23"),
                     links: {
-                        "Licence professionnelle web": "http://www.insset.u-picardie.fr/formations/licence-pro-web",
-                        "Article sur le référencement": "http://blog.christophe-boucaut.fr/chien-ou-chiens-le-referencement-de-votre-site-web/",
+                        "Licence professionnelle web": "http://www.insset.u-picardie.fr/formations/licence-professionnelle/licence-pro-web",
+                        "Article sur le référencement": "https://blog.christophe-boucaut.fr/chien-ou-chiens-le-referencement-de-votre-site-web/",
                         "Projet scolaire d'e-commerce": "https://github.com/ChristopheBoucaut/INSSET_ecommerce"
                     }
                 },
@@ -183,7 +192,7 @@
                     dateStart: new Date("2010-09-01"),
                     dateEnd: new Date("2012-06-31"),
                     links: {
-                        "DUT informatique": "http://www.iutv.univ-paris13.fr/formations/dut/dut-informatique.html"
+                        "DUT informatique": "https://iutv.univ-paris13.fr/dut-informatique/"
                     },
                     hidePrint: true
                 },

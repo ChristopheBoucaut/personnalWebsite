@@ -6,12 +6,28 @@
         function($scope) {
             var projects = [
                 {
+                    title: "ED : Ships",
+                    subtitle: "Personnel",
+                    techno: "AngularJS",
+                    description: "views/projectsDescription/ed_ships.html",
+                    picture: "images/projects/edships.png",
+                    link: "https://christopheboucaut.github.io/ed-my-ships/#/"
+                },
+                {
+                    title: "Periodic Task Manager",
+                    subtitle: "Web APP / Personnel",
+                    techno: "AngularJS",
+                    description: "views/projectsDescription/periodic_task_manager.html",
+                    picture: "images/projects/periodictaskmanager.png",
+                    link: "https://christopheboucaut.github.io/periodic-task-manager/#/"
+                },
+                {
                     title: "Hier et aujourd'hui",
                     subtitle: "Application mobile / API REST",
                     techno: "AngularJS / Cordova / Symfony 2",
                     description: "views/projectsDescription/hier_et_aujourdhui.html",
                     picture: "images/projects/hieretaujourdhui.png",
-                    link: "http://www.geneanet.org/hier_et_aujourdhui"
+                    link: "https://www.geneanet.org/hier_et_aujourdhui"
                 },
                 {
                     title: "CloudIn'tra manager",
@@ -26,7 +42,7 @@
                     techno: "AngularJS / Cordova / Symfony 2",
                     description: "views/projectsDescription/sauvons_nos_tombes.html",
                     picture: "images/projects/sauvonsnostombes.png",
-                    link: "http://www.geneanet.org/sauvons_nos_tombes"
+                    link: "https://www.geneanet.org/sauvons_nos_tombes"
                 },
                 {
                     title: "CloudIn'tra",
@@ -41,7 +57,7 @@
                     techno: "Prestashop",
                     description: "views/projectsDescription/geneanet_boutique.html",
                     picture: "images/projects/boutique.png",
-                    link: "http://www.geneanet.org/boutique/"
+                    link: "https://www.geneanet.org/boutique/"
                 },
                 {
                     title: "Espérance Rando",
@@ -49,7 +65,7 @@
                     techno: "Wordpress",
                     description: "views/projectsDescription/esperance_rando.html",
                     picture: "images/projects/esperancerando.png",
-                    link: "http://esperancerando.fr/"
+                    link: "https://esperancerando.fr/"
                 },
                 {
                     title: "Geneastar",
@@ -57,7 +73,7 @@
                     techno: "PHP",
                     description: "views/projectsDescription/geneastar.html",
                     picture: "images/projects/geneastar.png",
-                    link: "http://www.geneastar.org/"
+                    link: "https://www.geneastar.org/"
                 }
             ];
 

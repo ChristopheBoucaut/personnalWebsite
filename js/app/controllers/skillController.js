@@ -12,23 +12,15 @@
                         favorites: true
                     },
                     {
-                        name: "Symfony 2",
+                        name: "Symfony",
                         level: 4,
                         inProgress: true
-                    },
-                    {
-                        name: "NodeJS (puis Meteor)",
-                        level: 1
                     },
                     {
                         name: "Elasticsearch",
                         level: 4,
                         inProgress: true,
                         favorites: true
-                    },
-                    {
-                        name: "Python (puis Django)",
-                        level: 1
                     },
                     {
                         name: "Electron",
@@ -38,19 +30,18 @@
                 "Développement frontoffice": [
                     {
                         name: "Javascript (POO)",
-                        level: 4,
+                        level: 5,
                         favorites: true,
                         inProgress: false
                     },
                     {
                         name: "AngularJS",
-                        level: 4,
-                        favorites: true,
-                        inProgress: true
+                        level: 4
                     },
                     {
                         name: "HTML 5",
-                        level: 3
+                        level: 3,
+                        inProgress: true
                     },
                     {
                         name: "CSS 3",
@@ -58,13 +49,8 @@
                         inProgress: true
                     },
                     {
-                        name: "Foundation (sass)",
-                        level: 4,
-                        inProgress: true
-                    },
-                    {
-                        name: "Bootstrap",
-                        level: 3
+                        name: "Foundation et sass",
+                        level: 4
                     }
                 ],
                 "Développement mobile": [
@@ -78,14 +64,14 @@
                     },
                     {
                         name: "Cordova",
-                        level: 5,
+                        level: 4,
                         favorites: true
                     }
                 ],
                 "Travail en équipe": [
                     {
                         name: "SCRUM",
-                        level: 3
+                        level: 4
                     },
                     {
                         name: "Trello",
@@ -96,6 +82,10 @@
                         name: "Github",
                         level: 4,
                         favorites: true
+                    },
+                    {
+                        name: "Encadrement stagiaire",
+                        level: 4
                     }
                 ],
                 "Divers": [
@@ -105,10 +95,6 @@
                     },
                     {
                         name: "Prestashop",
-                        level: 4
-                    },
-                    {
-                        name: "API Twitter",
                         level: 3
                     },
                     {
@@ -117,12 +103,9 @@
                         inProgress: true
                     },
                     {
-                        name: "Référencement",
-                        level: 3
-                    },
-                    {
-                        name: "Encadrement stagiaire",
-                        level: 4
+                        name: "Extension Chrome",
+                        level: 3,
+                        favorites: true
                     }
                 ],
                 "Devops": [
@@ -138,16 +121,11 @@
                     },
                     {
                         name: "Docker",
-                        level: 2,
-                        favorites: true,
-                        inProgress: true
+                        level: 1,
+                        favorites: true
                     },
                     {
                         name: "Brunch",
-                        level: 1
-                    },
-                    {
-                        name: "Openstack",
                         level: 1
                     },
                     {

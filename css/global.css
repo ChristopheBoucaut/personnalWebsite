@@ -54,9 +54,6 @@ footer li a {
 .icon-twitter {
     background-image: url('../icons/twitter.png');
 }
-.icon-google-plus {
-    background-image: url('../icons/googleplus.png');
-}
 .icon-github {
     background-image: url('../icons/github.png');
 }
@@ -68,9 +65,6 @@ footer li a {
 }
 .icon-mdn {
     background-image: url('../icons/mdn.png');
-}
-.icon-gitter {
-    background-image: url('../icons/gitter.png');
 }
 
 footer p {
