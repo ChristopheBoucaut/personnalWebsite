@@ -1,7 +1,7 @@
 exports.config =
     paths:
         public: 'app'
-        watched: ['js', 'css', 'views', 'index.html', 'images', 'bower_components/bootstrap/dist/fonts']
+        watched: ['js', 'css', 'views', 'index.html', 'images', 'bower_components/bootstrap/dist/fonts', 'bower_components/bootstrap/dist/css/bootstrap.css']
 
     conventions:
         ignored: /^(app|(bower_components\/(bootstrap|jquery)\/(?!dist|fonts)))/
@@ -24,7 +24,7 @@ exports.config =
         stylesheets:
             joinTo:
                 'css/app.css': /^css/
-                'css/vendor.css': /^bower_components\/bootstrap\/dist\/css\/bootstrap.css/
+                'css/vendor.css': /^bower_components\/bootstrap\/dist\/css\/bootstrap\.css/
             order:
                 before: [
                     'bower_components/bootstrap/dist/css/bootstrap.css'
