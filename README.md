@@ -1,17 +1,23 @@
+# Requirements
+
+Docker / Docker Compose
+
 # Install
 
 ``` shell
 git clone https://github.com/ChristopheBoucaut/personnalWebsite
-npm install
-bower install
+make init
 ```
 
 + **For dev:**
 ``` shell
-./node_modules/brunch/bin/brunch w --server
+make docker-up
+# go to localhost:3333
+# make docker-down to stop all
 ```
 
-+ **For build the production (minify css & js):**
++ **For build the production:**
 ``` shell
-./node_modules/brunch/bin/brunch build --production
+make clean
+make build-prod
 ```
