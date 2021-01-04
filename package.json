@@ -4,6 +4,7 @@
   "description": "Personnal website with angularJS",
   "main": "index.html",
   "scripts": {
+    "start": "./node_modules/brunch/bin/brunch w --server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,6 +21,7 @@
     "javascript-brunch": ">= 1.0 < 1.8",
     "css-brunch": ">= 1.0 < 1.8",
     "uglify-js-brunch": ">= 1.0 < 1.8",
-    "clean-css-brunch": ">= 1.0 < 1.8"
+    "clean-css-brunch": ">= 1.0 < 1.8",
+    "bower": "1.8.8"
   }
 }

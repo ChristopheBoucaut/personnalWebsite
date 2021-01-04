@@ -52,19 +52,19 @@ footer li a {
 }
 
 .icon-twitter {
-    background-image: url('../icons/twitter.png');
+    background-image: url('../images/icons/twitter.png');
 }
 .icon-github {
-    background-image: url('../icons/github.png');
+    background-image: url('../images/icons/github.png');
 }
 .icon-linkedin {
-    background-image: url('../icons/linkedin.png');
+    background-image: url('../images/icons/linkedin.png');
 }
 .icon-stackoverflow {
-    background-image: url('../icons/stackoverflow.png');
+    background-image: url('../images/icons/stackoverflow.png');
 }
 .icon-mdn {
-    background-image: url('../icons/mdn.png');
+    background-image: url('../images/icons/mdn.png');
 }
 
 footer p {
