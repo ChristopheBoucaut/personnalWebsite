@@ -17,14 +17,10 @@
                         inProgress: true
                     },
                     {
-                        name: "Elasticsearch",
+                        name: "PHPUnit",
                         level: 4,
                         inProgress: true,
                         favorites: true
-                    },
-                    {
-                        name: "Electron",
-                        level: 0
                     }
                 ],
                 "Développement frontoffice": [
@@ -33,10 +29,6 @@
                         level: 5,
                         favorites: true,
                         inProgress: false
-                    },
-                    {
-                        name: "AngularJS",
-                        level: 4
                     },
                     {
                         name: "HTML 5",
@@ -74,9 +66,10 @@
                         level: 4
                     },
                     {
-                        name: "Trello",
-                        level: 4,
-                        favorites: true
+                        name: "Jira",
+                        level: 3,
+                        favorites: false,
+                        inProgress: true
                     },
                     {
                         name: "Github",
@@ -90,28 +83,8 @@
                 ],
                 "Divers": [
                     {
-                        name: "Wordpress",
-                        level: 3
-                    },
-                    {
-                        name: "Prestashop",
-                        level: 3
-                    },
-                    {
-                        name: "Bonnes pratiques / travail en équipe",
-                        level: 4,
-                        inProgress: true
-                    },
-                    {
-                        name: "Extension Chrome",
+                        name: "Behat",
                         level: 3,
-                        favorites: true
-                    }
-                ],
-                "Devops": [
-                    {
-                        name: "Tests unitaires",
-                        level: 4,
                         inProgress: true
                     },
                     {
@@ -120,13 +93,23 @@
                         favorites: true
                     },
                     {
-                        name: "Docker",
-                        level: 1,
+                        name: "Extension Chrome",
+                        level: 3,
+                        favorites: true
+                    }
+                ],
+                "Technos": [
+                    {
+                        name: "Elasticsearch",
+                        level: 4,
+                        inProgress: true,
                         favorites: true
                     },
                     {
-                        name: "Brunch",
-                        level: 1
+                        name: "Docker",
+                        level: 3,
+                        favorites: true,
+                        inProgress: true
                     },
                     {
                         name: "RabbitMQ",

@@ -22,3 +22,21 @@
 .before-separator + .before-separator:before {
     content: "|";
 }
+
+#skills {
+    display: grid;
+    grid-gap: 14px;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+    #skills {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    #skills {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

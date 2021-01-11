@@ -7,12 +7,24 @@
             var stepsCareer = [
                 {
                     type: "professional",
+                    title: "Senior Developer",
+                    organisation: "Campings.com",
+                    description: "devWebCampingsComCdi.html",
+                    keywords: ["elasticsearch", "symfony", "phpunit", "behat"],
+                    dateStart: new Date("2020-12-01"),
+                    dateEnd: null,
+                    links: {
+                        "Campings.com": "https://www.campings.com/fr/",
+                    }
+                },
+                {
+                    type: "professional",
                     title: "Développeur web",
                     organisation: "Geneanet",
                     description: "devWebGeneanetCdi.html",
                     keywords: ["elasticsearch", "foundation", "symfony", "rabbitmq", "websocket", "extension chrome", "phpunit"],
                     dateStart: new Date("2015-09-03"),
-                    dateEnd: null,
+                    dateEnd: new Date("2020-11-30"),
                     links: {
                         "Geneanet": "https://www.geneanet.org/",
                         "Correspondances intelligentes": "https://www.geneanet.org/blog/post/2016/06/nouveau-sur-geneanet-les-correspondances-intelligentes",
