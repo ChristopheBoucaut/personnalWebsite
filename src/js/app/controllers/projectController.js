@@ -6,6 +6,22 @@
         function($scope) {
             var projects = [
                 {
+                    title: "SPCoach",
+                    subtitle: "Site professionnelle pour une coach",
+                    techno: "Natif/Wordpress",
+                    description: "views/projectsDescription/spcoach.html",
+                    picture: "images/projects/spcoach.png",
+                    link: "https://www.spcoach.fr/"
+                },
+                {
+                    title: "Espérance Rando - Refonte",
+                    subtitle: "Site web d'association de randonnée",
+                    techno: "Wordpress",
+                    description: "views/projectsDescription/esperance_rando_rework.html",
+                    picture: "images/projects/esperancerando_rework.png",
+                    link: "https://esperancerando.fr/"
+                },
+                {
                     title: "ED : Ships",
                     subtitle: "Personnel",
                     techno: "AngularJS",

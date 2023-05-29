@@ -7,12 +7,24 @@
             var stepsCareer = [
                 {
                     type: "professional",
+                    title: "Senior Developer backend",
+                    organisation: "Africa Media Group",
+                    description: "devBackendAfricaMediaGroupCdi.html",
+                    keywords: ["symfony", "auth0", "pubsub"],
+                    dateStart: new Date("2023-03-01"),
+                    dateEnd: null,
+                    links: {
+                        "Jeuneafrique": "https://www.jeuneafrique.com/",
+                    }
+                },
+                {
+                    type: "professional",
                     title: "Senior Developer",
                     organisation: "Campings.com",
                     description: "devWebCampingsComCdi.html",
                     keywords: ["elasticsearch", "symfony", "phpunit", "behat"],
                     dateStart: new Date("2020-12-01"),
-                    dateEnd: null,
+                    dateEnd: new Date("2023-02-24"),
                     links: {
                         "Campings.com": "https://www.campings.com/fr/",
                     }
